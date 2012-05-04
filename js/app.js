@@ -78,6 +78,7 @@ $(document).ready(function(){
 			// Link to exhibitor detail pages
 			$('#exhibitor-list li').click(function(){
 				var anchor = $(this).find('h3').html();
+				anchor = anchor.replace(/\s+/g, '');
 				window.location.hash = anchor;
 			});
 
