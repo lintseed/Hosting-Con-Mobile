@@ -2,11 +2,14 @@ $(document).bind("mobileinit", function(){
 	$.mobile.pushStateEnabled = true;
 });
 
-
+$(document).ready(function(){
+	//$('.sponsor').load('/sponsor.html');
+});
 
 		$(function(){
+
 			$('#menu').load('menu.html');
-			$('#sponsor').load('sponsor.html');
+			$('.sponsor').load('sponsor.html');
 			
 			var menuStatus;
 			
@@ -70,6 +73,12 @@ $(document).bind("mobileinit", function(){
 				$(this).addClass('ui-btn-active');
 				$('div.content_div').hide();
 				$('div#' + $(this).attr('data-href')).show();
+			});
+
+			// Link to exhibitor detail pages
+			$('#exhibitor-list li').click(function(){
+				var anchor = $(this).find('h3').html();
+				window.location.hash = anchor;
 			});
 
 

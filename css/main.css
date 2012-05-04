@@ -65,7 +65,7 @@ body{
 	p {
 		margin: .75em 0;
 	}
-	#sponsor {
+	.sponsor {
 		padding: 3px 0;
 		text-align: center;
 		font-size: 12px;
@@ -198,6 +198,9 @@ body{
 	}
 	/* Exhibitor Details
 	-----------------------------------------------------------------------------------------------------------*/
+	.exhibitor .ui-content {
+		margin: 20px;
+	}
 	.exhibitor .ui-body-b,
 	.exhibitor .ui-dialog.ui-overlay-b {
 		background: #fff;
@@ -208,7 +211,8 @@ body{
 		font-weight: bold;
 	}
 	.exhibitor .booth {
-		margin-bottom: 1em;
+		margin: 0 0 1em;
+		font-size: 0.85em;
 	}
 	.exhibitor .headline img {
 		float: left;
