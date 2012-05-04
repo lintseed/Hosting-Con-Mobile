@@ -12,6 +12,9 @@ body{
 	background:#5a5959 url(../images/menuBg.gif) top left repeat-y;
 	-webkit-text-size-adjust:none !important;
 }
+	.header .ui-btn {
+		margin: 4px 0 0 20px;
+	}
 	.ui-header .ui-title {
 		display: block;
 		width: 156px;
@@ -177,6 +180,8 @@ body{
 		clear: left;
 		overflow: hidden;
 		white-space: normal;
+		border-bottom: 0;
+		cursor: pointer;
 	}
 	#exhibitor-list li h3 {
 		float: left;
@@ -206,7 +211,7 @@ body{
 		background: #fff;
 	}
 	.exhibitor h2 {
-		margin-bottom: .4em;
+		margin-bottom: .2em;
 		font-size: 24px;
 		font-weight: bold;
 	}
