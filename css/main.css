@@ -13,7 +13,7 @@ body{
 	-webkit-text-size-adjust:none !important;
 }
 	.header .ui-btn {
-		margin: 4px 0 0 20px;
+		margin-top: 4px;
 	}
 	.ui-header .ui-title {
 		display: block;
@@ -179,6 +179,7 @@ body{
 	#exhibitor-list li {
 		clear: left;
 		overflow: hidden;
+		padding: .7em;
 		white-space: normal;
 		border-bottom: 0;
 		cursor: pointer;
@@ -204,7 +205,7 @@ body{
 	/* Exhibitor Details
 	-----------------------------------------------------------------------------------------------------------*/
 	.exhibitor .ui-content {
-		margin: 20px;
+		margin: 20px 10px;
 	}
 	.exhibitor .ui-body-b,
 	.exhibitor .ui-dialog.ui-overlay-b {
@@ -224,7 +225,7 @@ body{
 	}
 	.exhibitor .description {
 		clear: left;
-		padding: 20px 0;
+		padding: 15px 0 20px;
 		font-size: 13px;
 		white-space: normal;
 	}
