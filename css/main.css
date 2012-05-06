@@ -232,4 +232,27 @@ body{
 	.exhibitor p.ui-li-desc {
 		white-space: normal;
 	}
-		
+	/* Schedule
+	-----------------------------------------------------------------------------------------------------------*/
+	.schedule .ui-content {
+		padding: 15px 0;
+	}
+	ul#days {
+		list-style: none;
+		overflow: hidden;
+		padding: 0;
+	}
+		ul#days li {
+			float: left;
+		}
+	#track {
+		width: 100%;
+	}
+
+	div.time {
+		float: left;
+		font: ;
+	}
+	ul#schedule-grid li .ui-btn {
+		padding: 0;
+	}

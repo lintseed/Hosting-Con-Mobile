@@ -82,5 +82,12 @@ $(document).ready(function(){
 				window.location.hash = anchor;
 			});
 
+			// Link to schedule detail pages
+			$('#schedule-grid li').click(function(){
+				var anchor = $(this).attr('id');
+				anchor = anchor.replace(/\s+/g, '');
+				window.location.hash = anchor;
+			});
+
 
 });	
