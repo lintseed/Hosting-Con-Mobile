@@ -176,40 +176,73 @@ body{
 
 	/* Exhibitor List
 	-----------------------------------------------------------------------------------------------------------*/
-	.exhibitor-list {
-		margin: 30px 0 0;
+	.exhibitor-list .ui-content {
+		padding: 15px 0;
 		}
-		.exhibitor-list li ul li {
-			clear: left;
-			overflow: hidden;
-			padding: .7em 0 !important;
-			white-space: normal;
-			border-bottom: 0;
-			cursor: pointer;
+		.exhibitor-list .ui-content .heading {
+			padding: 0 15px;
+		}
+		.exhibitor-list ul {
+			margin: 30px 0 0;
 			}
-			.exhibitor-list li h3 {
-				float: left;
-				width: 85%;
-				margin: 0;
-				padding: 0 0 0 35px;
-				font-size: 22px;
-				font-weight: bold;
+			/* Fake the backgrounds */
+			.exhibitor-list ul li ul li {
+				clear: left;
+				overflow: hidden;
+				padding: .7em 0 !important;
 				white-space: normal;
+				cursor: pointer;
+				border: 1px solid    		#ccc    /*{b-bup-border}*/;
+				border-bottom: 0;
+				background:    			#eee    /*{b-bup-background-color}*/;
+				font-weight: bold;
+				color:    					#2F3E46    /*{b-bup-color}*/;
+				text-shadow:    0    /*{b-bup-shadow-x}*/    1px    /*{b-bup-shadow-y}*/    1px    /*{b-bup-shadow-radius}*/    #f6f6f6    /*{b-bup-shadow-color}*/;
+				background-image: -webkit-gradient(linear, left top, left bottom, from(    #fdfdfd    /*{b-bup-background-start}*/), to(    #eee    /*{b-bup-background-end}*/)); /* Saf4+, Chrome */
+				background-image: -webkit-linear-gradient(    #fdfdfd    /*{b-bup-background-start}*/,    #eee    /*{b-bup-background-end}*/); /* Chrome 10+, Saf5.1+ */
+				background-image:    -moz-linear-gradient(    #fdfdfd    /*{b-bup-background-start}*/,    #eee    /*{b-bup-background-end}*/); /* FF3.6 */
+				background-image:     -ms-linear-gradient(    #fdfdfd    /*{b-bup-background-start}*/,    #eee    /*{b-bup-background-end}*/); /* IE10 */
+				background-image:      -o-linear-gradient(    #fdfdfd    /*{b-bup-background-start}*/,    #eee    /*{b-bup-background-end}*/); /* Opera 11.10+ */
+				background-image:         linear-gradient(    #fdfdfd    /*{b-bup-background-start}*/,    #eee    /*{b-bup-background-end}*/);
+
 			}
-			.exhibitor-list li .booth {
-				float: right;
-				width: 10%;
-				padding-right: 10px;
-				text-align: right;
-				font-size: 13px;
-				font-weight: normal;
-				margin: .5em .5em 0;
-				color: #62696F;
-			}
-			.platinum	{ clear: left; display: block; color: #6c6765; font-size: 13px; font-weight: bold; padding: 0 0 0 35px; }
-			.gold		{ clear: left; display: block; color: #E8C400; font-size: 13px; font-weight: bold; padding: 0 0 0 35px; }
-			.silver		{ clear: left; display: block; color: #928E8C; font-size: 13px; font-weight: bold; padding: 0 0 0 35px; }
-			.media		{ clear: left; display: block; color: #3371AA; font-size: 13px; font-weight: bold; padding: 0 0 0 35px; }
+			.exhibitor-list ul li ul li:hover,
+			.exhibitor-list ul li ul li:active {
+				border-color: #bbbbbb    /*{b-bhover-border}*/;
+				background:    			#dadada    /*{b-bhover-background-color}*/;
+				font-weight: bold;
+				color:    					#2F3E46    /*{b-bhover-color}*/;
+				text-shadow:    0    /*{b-bhover-shadow-x}*/    1px    /*{b-bhover-shadow-y}*/    1px    /*{b-bhover-shadow-radius}*/    #fff    /*{b-bhover-shadow-color}*/;
+				background-image: -webkit-gradient(linear, left top, left bottom, from(    #ededed    /*{b-bhover-background-start}*/), to(    #dadada    /*{b-bhover-background-end}*/)); /* Saf4+, Chrome */
+				background-image: -webkit-linear-gradient(    #ededed    /*{b-bhover-background-start}*/,    #dadada    /*{b-bhover-background-end}*/); /* Chrome 10+, Saf5.1+ */
+				background-image:    -moz-linear-gradient(    #ededed    /*{b-bhover-background-start}*/,    #dadada    /*{b-bhover-background-end}*/); /* FF3.6 */
+				background-image:     -ms-linear-gradient(    #ededed    /*{b-bhover-background-start}*/,    #dadada    /*{b-bhover-background-end}*/); /* IE10 */
+				background-image:      -o-linear-gradient(    #ededed    /*{b-bhover-background-start}*/,    #dadada    /*{b-bhover-background-end}*/); /* Opera 11.10+ */
+				background-image:         linear-gradient(    #ededed    /*{b-bhover-background-start}*/,    #dadada    /*{b-bhover-background-end}*/);
+				}
+				.exhibitor-list ul li h3 {
+					float: left;
+					width: 85%;
+					margin: 0;
+					padding: 0 0 0 35px;
+					font-size: 22px;
+					font-weight: bold;
+					white-space: normal;
+				}
+				.exhibitor-list ul li .booth {
+					float: right;
+					width: 10%;
+					padding-right: 10px;
+					text-align: right;
+					font-size: 13px;
+					font-weight: normal;
+					margin: .5em .5em 0;
+					color: #62696F;
+				}
+				.platinum	{ clear: left; display: block; color: #6c6765; font-size: 13px; font-weight: bold; padding: 0 0 0 35px; }
+				.gold		{ clear: left; display: block; color: #E8C400; font-size: 13px; font-weight: bold; padding: 0 0 0 35px; }
+				.silver		{ clear: left; display: block; color: #928E8C; font-size: 13px; font-weight: bold; padding: 0 0 0 35px; }
+				.media		{ clear: left; display: block; color: #3371AA; font-size: 13px; font-weight: bold; padding: 0 0 0 35px; }
 
 	/* Exhibitor Details
 	-----------------------------------------------------------------------------------------------------------*/
@@ -281,9 +314,9 @@ body{
 	.title.ui-link-inherit { display: none !important; padding: 5px 0; text-indent: 10px; background: #bbb; color: #fff; width: 100%; float: left; font-weight: bold; text-transform: uppercase; }
 	.slider-content .selected .title { background: #666; }
 	.slider .slider-nav { position: absolute; left: 0; top: 0; background: #666; min-height: 250px; }
-	.slider .slider-nav ul { padding: 5px 0; }
+	.slider .slider-nav ul { margin: 0; padding: 5px 0; }
 	.slider .slider-nav li a { padding: 3px 5px; line-height: 13px; text-align: center; color: #fff; font-weight: bold; display: block; text-transform: uppercase; cursor: pointer; }
 	.slider #debug { position: absolute; bottom: 0; left: 0; padding: 5px; background: #000; color: #fff; }
-	.slider .arrow { font-size: 0px; line-height: 0%; width: 0px; border-bottom: 8px solid #fff; border-left: 5px solid #333; border-right: 5px solid #333; position: relative; top: 5px; }
+	.slider .arrow { font-size: 0px; line-height: 0%; width: 0px; border-bottom: 8px solid #fff; border-left: 5px solid #333; border-right: 5px solid #333; position: relative; top: 5px; vertical-align: top; }
 	.slider .down { border-bottom: none; border-top: 8px solid #fff; top: 15px; }
 	.slider .slide-up, .slider .slide-down { height: 20px; background: #333; text-align: center; cursor: pointer; float: right; width: 100%; position: relative; }

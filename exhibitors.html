@@ -6,10 +6,15 @@
 	<link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
 	<link rel="stylesheet" href="css/themes/HostingCon.css" />
 	<link rel="stylesheet" href="css/main.css?v=30" />
+
+	<link rel="apple-touch-icon" href="http://stage.m.hostingcon.com/apple-touch-icon-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" href="http://stage.m.hostingcon.com/apple-touch-icon-precomposed.png"/>
+
 	<script src="js/jquery-1.7.1.min.js"></script>
 	<script src="js/jquery.mobile-1.1.0.min.js"></script>
 	<script type="text/javascript" src="js/app.js?v=30"></script>
 	<script type="text/javascript" src="js/slidernav.js"></script>
+
 </head>
 <body>
 
@@ -17,7 +22,7 @@
 		Menu Text
 	</div>
 
-	<div data-role="page" id="main" data-theme="a">
+	<div data-role="page" id="main" class="exhibitor-list" data-theme="a">
 
 		<div data-role="header">
 			<a href="#" class="showMenu menuBtn">Menu</a>
@@ -26,12 +31,14 @@
 		<div class="sponsor"></div>
 
 		<div data-role="content" data-theme="a">
-			<h2>HostingCon 2012 Exhibitor List</h2>
-			<p>If you're in search of products and services to help take your hosting business to the next level, you'll find it on the HostingCon 2012 Exhibit floor. To see the layout of the show floor and where exhibitors are located, check out the HostingCon 2012 floorplan. This list is growing daily, so be sure to check back often!</p>
+			<div class="heading">
+				<h2>HostingCon 2012 Exhibitor List</h2>
+				<p>If you're in search of products and services to help take your hosting business to the next level, you'll find it on the HostingCon 2012 Exhibit floor. To see the layout of the show floor and where exhibitors are located, check out the HostingCon 2012 floorplan. This list is growing daily, so be sure to check back often!</p>
+			</div>
 
 			<div id="slider">
 				<div class="slider-content">
-					<ul id="iphone-scroll" class="exhibitor-list">
+					<ul id="iphone-scroll">
 						<li id="a"><a name="a" class="title">A</a>
 							<ul data-role="listview" data-theme="b">
 								<li>
