@@ -176,13 +176,13 @@ body{
 
 	/* Exhibitor List
 	-----------------------------------------------------------------------------------------------------------*/
-	.exhibitor-list .ui-content {
+	.alpha-list .ui-content {
 		padding: 15px 0;
 		}
 		.exhibitor-list .ui-content .heading {
 			padding: 0 15px;
 		}
-		.exhibitor-list ul {
+		.alpha-list ul {
 			margin: 30px 0 0;
 			}
 			/* Fake the backgrounds */
@@ -206,7 +206,7 @@ body{
 				background-image:         linear-gradient(    #fdfdfd    /*{b-bup-background-start}*/,    #eee    /*{b-bup-background-end}*/);
 
 			}
-			.exhibitor-list ul li ul li:hover,
+			.exhibitor-list l li ul li:hover,
 			.exhibitor-list ul li ul li:active {
 				border-color: #bbbbbb    /*{b-bhover-border}*/;
 				background:    			#dadada    /*{b-bhover-background-color}*/;
@@ -275,6 +275,67 @@ body{
 		white-space: normal;
 	}
 
+	/* Speaker List
+	-----------------------------------------------------------------------------------------------------------*/
+	.speaker-list .ui-content {
+		padding: 0;
+		}
+		.speaker-list ul li ul li {
+			padding: 0 !important;
+			text-indent: 35px;
+			border-bottom: 0;
+		}
+		.speaker-list .ui-li .ui-btn-inner a.ui-link-inherit,
+		.speaker-list .ui-li-static.ui-li {
+			overflow: hidden;
+			border: 0;
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+			border-radius: 0;
+		}
+		.speaker-list .ui-li-has-thumb .ui-btn-inner a.ui-link-inherit,
+		.speaker-list .ui-li-static.ui-li-has-thumb {
+			padding-left: 0;
+		}
+		.speaker-list .ui-li-has-thumb {
+			text-indent: 0;
+			}
+			.speaker-list ul li h3 {
+				margin: 0;
+				padding: 0;
+				font-size: 22px;
+				font-weight: bold;
+				white-space: normal;
+			}
+			.bioPhoto {
+				position: relative;
+				float: left;
+				margin: 0 15px 0 35px;
+				border: 3px solid #C9C9C9;
+			}
+			.speaker-list ul li span.positch {
+				display: block;
+				font-size: 13px;
+				font-weight: normal;
+			}
+
+	/* Speaker Details
+	-----------------------------------------------------------------------------------------------------------*/
+	.speaker .bioPhoto {
+		margin: 0 15px 0 0;
+	}
+	.speaker h2 {
+		margin-bottom: .2em;
+		font-size: 24px;
+		font-weight: bold;
+	}
+	.speaker .bio {
+		clear: left;
+		padding: 10px 0;
+		font-size: 13px;
+		white-space: normal;
+	}
+
 	/* Schedule
 	-----------------------------------------------------------------------------------------------------------*/
 	.schedule .ui-content {
@@ -299,6 +360,74 @@ body{
 	ul#schedule-grid li .ui-btn {
 		padding: 0;
 	}
+	#schedule-grid.All,
+#schedule-grid.Networking {
+	padding: 3px 0 0 10px;
+	text-align: center;
+	vertical-align: middle;
+	background: #EFEFEA url(/account/themed/2012/img/texture.gif) 0 0 repeat;
+	font: italic normal 1.2em/1em CartoGothicStdBook, Myriad, Tahoma, Arial, sans-serif;
+	color: #454545;
+}
+
+#schedule-grid.altrow div.All, #schedule-grid.altrow div.Networking {
+}
+
+#schedule-grid li.session-20100721 table div.All, #schedule-grid li.session-20100721 table div.Networking {
+}
+
+#schedule-grid li.session-20100721 table tr.altrow div.All, #schedule-grid li.session-20100721 table tr.altrow div.Networking {
+}
+
+#schedule-grid.Keynote {
+	background: #FAF9E7;
+	border: 1px solid #EED8AA;
+	box-shadow: inset 0px 0px 16px #F2E4C1;
+	-moz-box-shadow: inset 0px 0px 16px #F2E4C1;
+	-webkit-box-shadow: inset 0px 0px 16px #F2E4C1;
+}
+
+#schedule-grid.Keynote span {
+	font-weight: bold;
+	display: block;
+}
+
+#schedule-grid.General_Session {
+	background: #F5F7FC;
+	border: 1px solid #CFD7F1;
+	box-shadow: inset 0px 0px 16px #DEE3F6;
+	-moz-box-shadow: inset 0px 0px 16px #DEE3F6;
+	-webkit-box-shadow: inset 0px 0px 16px #DEE3F6;
+}
+
+#schedule-grid.time,
+#schedule-grid table .time {
+	width: 6%;
+	padding: 5px 0 5px 5px;
+	text-align: left;
+	font: normal 0.9em/1.2em NewsCycleRegular, Arial, sans-serif;
+	color: #fff;
+	background: #454545;
+}
+#schedule-grid.altrow div.time		{ background: #787878; }
+
+
+.Sales_Marketing						{ color: #CDA20B; background: #CDA20B; }
+.Industry_Trends						{ color: #584DC7; background: #584DC7; }
+.Technology							{ color: #599271; background: #599271; }
+.Management							{ color: #CD4F0B; background: #CD4F0B; }
+
+tr.altrow div.Sales_and_Marketing		{ background: #E6CB6E; }
+tr.altrow div.Industry_Trends			{ background: #9D96E3; }
+tr.altrow div.Technology					{ background: #A0E1BC; }
+tr.altrow div.Management					{ background: #E6986E; }
+
+
+div.Sales_and_Marketing					{ background: #E6C142; }
+div.Industry_Trends						{ background: #847BE3; }
+div.Technology							{ background: #5DC289; }
+div.Management							{ background: #E67C42; }
+
 	
 	/* Navigation Slider
 	-----------------------------------------------------------------------------------------------------------*/
@@ -307,12 +436,13 @@ body{
 	.slider-content { float: left; width: 100%; display: block; overflow: auto; min-height: 250px; }
 	.slider-content ul { float: left; width: 100%; display: block; position: relative; margin: 0; padding: 0; }
 	.slider-content ul li { float: left; width: 100%; }
-	.slider-content ul ul li a { padding: 5px 10px; display: block; border-bottom: 1px solid #f3f3f3; text-transform: capitalize; }
+	.slider-content a.title { display: none !important; }
+/*	.slider-content ul ul li a { padding: 5px 10px; display: block; border-bottom: 1px solid #f3f3f3; text-transform: capitalize; }
 	.slider-content ul ul li a:hover { background: #f3faff; border-color: #d5ebf9; }
-	.slider-content .title,
+	.slider-content a.title,
 	.slider-content .ui-link-inherit,
 	.title.ui-link-inherit { display: none !important; padding: 5px 0; text-indent: 10px; background: #bbb; color: #fff; width: 100%; float: left; font-weight: bold; text-transform: uppercase; }
-	.slider-content .selected .title { background: #666; }
+*/	.slider-content .selected .title { background: #666; }
 	.slider .slider-nav { position: absolute; left: 0; top: 0; background: #666; min-height: 250px; }
 	.slider .slider-nav ul { margin: 0; padding: 5px 0; }
 	.slider .slider-nav li a { padding: 3px 5px; line-height: 13px; text-align: center; color: #fff; font-weight: bold; display: block; text-transform: uppercase; cursor: pointer; }
