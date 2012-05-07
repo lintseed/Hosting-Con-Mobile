@@ -76,12 +76,12 @@ $(document).ready(function(){
 			});
 
 			// Link to exhibitor detail pages
-			$('.exhibitor-list li ul li').click(function(){
+			/*$('.exhibitor-list li ul li').click(function(){
 				var anchor = $(this).find('h3').html();
 				anchor = anchor.replace(/\s+/g, '');
 				window.location.hash = anchor;
 			});
-
+*/
 			
 			// Link to schedule detail pages
 			$('#schedule-grid li').click(function(){
