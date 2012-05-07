@@ -76,7 +76,7 @@ $(document).ready(function(){
 			});
 
 			// Link to exhibitor detail pages
-			$('#exhibitor-list li').click(function(){
+			$('.exhibitor-list li ul li').click(function(){
 				var anchor = $(this).find('h3').html();
 				anchor = anchor.replace(/\s+/g, '');
 				window.location.hash = anchor;
@@ -88,6 +88,9 @@ $(document).ready(function(){
 				anchor = anchor.replace(/\s+/g, '');
 				window.location.hash = anchor;
 			});
+
+			$('#slider').sliderNav({arrows: true});
+		//	$('#transformers').sliderNav({items:['autobots','decepticons'], debug: true, height: '300', arrows: false});
 
 
 });	
