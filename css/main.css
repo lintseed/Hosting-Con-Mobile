@@ -179,10 +179,10 @@ body{
 	.exhibitor-list {
 		margin: 30px 0 0;
 		}
-		.exhibitor-list li {
+		.exhibitor-list li ul li {
 			clear: left;
 			overflow: hidden;
-			padding: .7em;
+			padding: .7em 0 !important;
 			white-space: normal;
 			border-bottom: 0;
 			cursor: pointer;
@@ -191,7 +191,7 @@ body{
 				float: left;
 				width: 85%;
 				margin: 0;
-				padding: 0;
+				padding: 0 0 0 35px;
 				font-size: 22px;
 				font-weight: bold;
 				white-space: normal;
@@ -199,16 +199,17 @@ body{
 			.exhibitor-list li .booth {
 				float: right;
 				width: 10%;
+				padding-right: 10px;
 				text-align: right;
 				font-size: 13px;
 				font-weight: normal;
 				margin: .5em .5em 0;
 				color: #62696F;
 			}
-			.platinum	{ clear: left; display: block; color: #6c6765; font-size: 13px; font-weight: bold; }
-			.gold		{ clear: left; display: block; color: #E8C400; font-size: 13px; font-weight: bold; }
-			.silver		{ clear: left; display: block; color: #928E8C; font-size: 13px; font-weight: bold; }
-			.media		{ clear: left; display: block; color: #3371AA; font-size: 13px; font-weight: bold; }
+			.platinum	{ clear: left; display: block; color: #6c6765; font-size: 13px; font-weight: bold; padding: 0 0 0 35px; }
+			.gold		{ clear: left; display: block; color: #E8C400; font-size: 13px; font-weight: bold; padding: 0 0 0 35px; }
+			.silver		{ clear: left; display: block; color: #928E8C; font-size: 13px; font-weight: bold; padding: 0 0 0 35px; }
+			.media		{ clear: left; display: block; color: #3371AA; font-size: 13px; font-weight: bold; padding: 0 0 0 35px; }
 
 	/* Exhibitor Details
 	-----------------------------------------------------------------------------------------------------------*/
@@ -265,23 +266,24 @@ body{
 	ul#schedule-grid li .ui-btn {
 		padding: 0;
 	}
-	#iphone-scrollcontainer { height:461px; width:320px; overflow:auto; position:absolute; top:140px; left:40px; }
-#iphone-scroll { list-style: none; padding:0; margin:0; font-family:Georgia, Times, serif; font-size:15px; }
-#iphone-scroll li {  }
-#iphone-scroll ul { list-style: none; padding:0; margin:0; }
-#iphone-scroll ul li {  }
-#iphone-scroll ul li a { display:block; text-decoration:none; color:#000000; background-color:#FFFFFF; line-height:30px;
-	border-bottom-style:solid; border-bottom-width:1px; border-bottom-color:#CCCCCC; padding-left:10px; cursor:pointer; }
-#iphone-scroll ul li a:hover { color:#FFFFFF; background-image:url(../images/hover.png); background-repeat:repeat-x; }
-#iphone-scroll ul li a strong { margin-right:10px; }
-
-.nav-indicator { line-height:20px; background-image:url(../images/nav-indicator-bg.png); background-repeat:repeat-x; color:#FFFFFF; text-indent:20px; }
-
-#nav-indicator-fixed { line-height:20px; background-image:url(../images/nav-indicator-bg.png); background-repeat:repeat-x; color:#FFFFFF; text-indent:20px;
-position:fixed; width:320px; }
-
-#iphone-search { list-style: none; padding:0 5px; margin:0; font-family:Georgia, Times, serif; font-size:12px; line-height:17px; left:315px; margin-top: 20px;
-position:fixed; text-align:center; font-weight:bold; }
-#iphone-search li a { text-decoration:none; color:#666666; }
-#iphone-search li a:hover { color:#000000; }
-.searchbg { background-color:#999999; }
+	
+	/* Navigation Slider
+	-----------------------------------------------------------------------------------------------------------*/
+	.slider { min-height: 250px; display: block; position: relative; background: #fff; overflow: hidden; }
+	.slider ul { list-style: none; }
+	.slider-content { float: left; width: 100%; display: block; overflow: auto; min-height: 250px; }
+	.slider-content ul { float: left; width: 100%; display: block; position: relative; margin: 0; padding: 0; }
+	.slider-content ul li { float: left; width: 100%; }
+	.slider-content ul ul li a { padding: 5px 10px; display: block; border-bottom: 1px solid #f3f3f3; text-transform: capitalize; }
+	.slider-content ul ul li a:hover { background: #f3faff; border-color: #d5ebf9; }
+	.slider-content .title,
+	.slider-content .ui-link-inherit,
+	.title.ui-link-inherit { display: none !important; padding: 5px 0; text-indent: 10px; background: #bbb; color: #fff; width: 100%; float: left; font-weight: bold; text-transform: uppercase; }
+	.slider-content .selected .title { background: #666; }
+	.slider .slider-nav { position: absolute; left: 0; top: 0; background: #666; min-height: 250px; }
+	.slider .slider-nav ul { padding: 5px 0; }
+	.slider .slider-nav li a { padding: 3px 5px; line-height: 13px; text-align: center; color: #fff; font-weight: bold; display: block; text-transform: uppercase; cursor: pointer; }
+	.slider #debug { position: absolute; bottom: 0; left: 0; padding: 5px; background: #000; color: #fff; }
+	.slider .arrow { font-size: 0px; line-height: 0%; width: 0px; border-bottom: 8px solid #fff; border-left: 5px solid #333; border-right: 5px solid #333; position: relative; top: 5px; }
+	.slider .down { border-bottom: none; border-top: 8px solid #fff; top: 15px; }
+	.slider .slide-up, .slider .slide-down { height: 20px; background: #333; text-align: center; cursor: pointer; float: right; width: 100%; position: relative; }
