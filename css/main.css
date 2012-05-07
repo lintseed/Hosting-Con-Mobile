@@ -177,10 +177,7 @@ body{
 	/* Exhibitor List
 	-----------------------------------------------------------------------------------------------------------*/
 	.alpha-list .ui-content {
-		padding: 15px 0;
-		}
-		.exhibitor-list .ui-content .heading {
-			padding: 0 15px;
+		padding: 0;
 		}
 		.alpha-list ul {
 			margin: 30px 0 0;
@@ -197,7 +194,7 @@ body{
 					float: left;
 					width: 70%;
 					margin: 0;
-					padding: 0 0 0 35px;
+					padding: 0;
 					font-size: 22px;
 					font-weight: bold;
 					white-space: normal;
@@ -218,10 +215,10 @@ body{
 					margin-top: -8px;
 
 				}
-				.platinum	{ clear: left; display: block; color: #6c6765; font-size: 13px; font-weight: bold; padding: 0 0 0 35px; }
-				.gold		{ clear: left; display: block; color: #E8C400; font-size: 13px; font-weight: bold; padding: 0 0 0 35px; }
-				.silver		{ clear: left; display: block; color: #928E8C; font-size: 13px; font-weight: bold; padding: 0 0 0 35px; }
-				.media		{ clear: left; display: block; color: #3371AA; font-size: 13px; font-weight: bold; padding: 0 0 0 35px; }
+				.platinum	{ clear: left; display: block; color: #6c6765; font-size: 13px; font-weight: bold; }
+				.gold		{ clear: left; display: block; color: #E8C400; font-size: 13px; font-weight: bold; }
+				.silver		{ clear: left; display: block; color: #928E8C; font-size: 13px; font-weight: bold; }
+				.media		{ clear: left; display: block; color: #3371AA; font-size: 13px; font-weight: bold; }
 
 	/* Exhibitor Details
 	-----------------------------------------------------------------------------------------------------------*/
@@ -261,7 +258,6 @@ body{
 		}
 		.speaker-list ul li ul li {
 			padding: 0 !important;
-			text-indent: 35px;
 			border-bottom: 0;
 		}
 		.speaker-list .ui-li .ui-btn-inner a.ui-link-inherit,
@@ -271,13 +267,13 @@ body{
 			-moz-border-radius: 0;
 			-webkit-border-radius: 0;
 			border-radius: 0;
-		}
-		.speaker-list .ui-li-has-thumb .ui-btn-inner a.ui-link-inherit,
-		.speaker-list .ui-li-static.ui-li-has-thumb {
-			padding-left: 0;
-		}
-		.speaker-list .ui-li-has-thumb {
-			text-indent: 0;
+			}
+			.speaker-list .ui-li-has-thumb .ui-btn-inner a.ui-link-inherit,
+			.speaker-list .ui-li-static.ui-li-has-thumb {
+				padding-left: 15px;
+			}
+			.speaker-list .ui-li-has-thumb {
+				text-indent: 0;
 			}
 			.speaker-list ul li h3 {
 				margin: 0;
@@ -289,8 +285,8 @@ body{
 			.bioPhoto {
 				position: relative;
 				float: left;
-				margin: 0 15px 0 35px;
-				border: 3px solid #C9C9C9;
+				margin: 0 15px 0 0;
+				border: 3px solid #C9C9C9 !important;
 			}
 			.speaker-list ul li span.positch {
 				display: block;
@@ -411,7 +407,7 @@ div.Management							{ background: #E67C42; }
 	
 	/* Navigation Slider
 	-----------------------------------------------------------------------------------------------------------*/
-	.slider { min-height: 250px; display: block; position: relative; background: #fff; overflow: hidden; }
+	.slider { min-height: 250px; display: block; position: relative; background: #fff; overflow: hidden; padding-left: 25px; }
 	.slider ul { list-style: none; }
 	.slider-content { float: left; width: 100%; display: block; overflow: auto; min-height: 250px; }
 	.slider-content ul { float: left; width: 100%; display: block; position: relative; margin: 0; padding: 0; }
@@ -429,4 +425,4 @@ div.Management							{ background: #E67C42; }
 	.slider #debug { position: absolute; bottom: 0; left: 0; padding: 5px; background: #000; color: #fff; }
 	.slider .arrow { font-size: 0px; line-height: 0%; width: 0px; border-bottom: 8px solid #fff; border-left: 5px solid #333; border-right: 5px solid #333; position: relative; top: 5px; vertical-align: top; }
 	.slider .down { border-bottom: none; border-top: 8px solid #fff; top: 15px; }
-	.slider .slide-up, .slider .slide-down { height: 20px; background: #333; text-align: center; cursor: pointer; float: right; width: 100%; position: relative; }
+	.slider .slide-up, .slider .slide-down { height: 20px; background: #333; text-align: center; cursor: pointer; float: right; width: 100%; position: relative; padding: 0 14px; }
