@@ -9,6 +9,7 @@
 	<script src="js/jquery-1.7.1.min.js"></script>
 	<script src="js/jquery.mobile-1.1.0-rc.2.min.js"></script>
 	<script type="text/javascript" src="js/app.js?v=30"></script>
+	<script type="text/javascript" src="js/iphone-scroller.js"></script>
 </head>
 <body>
 
@@ -22,28 +23,61 @@
 			<a href="#" class="showMenu menuBtn">Menu</a>
 			<h1><a href="/">HostingCon 2012</a></h1>
 		</div><!-- /header -->
-		<div id="sponsor"></div>
+		<div class="sponsor"></div>
 
 		<div data-role="content" data-theme="a">
 			<h2>HostingCon 2012 Exhibitor List</h2>
 			<p>If you're in search of products and services to help take your hosting business to the next level, you'll find it on the HostingCon 2012 Exhibit floor. To see the layout of the show floor and where exhibitors are located, check out the HostingCon 2012 floorplan. This list is growing daily, so be sure to check back often!</p>
 
-			<ul data-role="listview" id="exhibitor-list" data-theme="b">
+			<ul id="iphone-search">
+				<li><a href="#A" title="A">A</a></li>
+				<li><a href="#B" title="B">B</a></li>
+				<li><a href="#C" title="C">C</a></li>
+				<li><a href="#D" title="D">D</a></li>
+				<li><a href="#E" title="E">E</a></li>
+				<li><a href="#F" title="F">F</a></li>
+				<li><a href="#G" title="G">G</a></li>
+				<li><a href="#H" title="H">H</a></li>
+				<li><a href="#I" title="I">I</a></li>
+				<li><a href="#J" title="J">J</a></li>
+				<li><a href="#K" title="K">K</a></li>
+				<li><a href="#L" title="L">L</a></li>
+				<li><a href="#M" title="M">M</a></li>
+				<li><a href="#N" title="N">N</a></li>
+				<li><a href="#O" title="O">O</a></li>
+				<li><a href="#P" title="P">P</a></li>
+				<li><a href="#Q" title="Q">Q</a></li>
+				<li><a href="#R" title="R">R</a></li>
+				<li><a href="#S" title="S">S</a></li>
+				<li><a href="#T" title="T">T</a></li>
+				<li><a href="#U" title="U">U</a></li>
+				<li><a href="#V" title="V">V</a></li>
+				<li><a href="#W" title="W">W</a></li>
+				<li><a href="#X" title="X">X</a></li>
+				<li><a href="#Y" title="Y">Y</a></li>
+				<li><a href="#Z" title="Z">Z</a></li>
+			</ul>
+			<ul data-role="listview" id="iphone-scroll" class="exhibitor-list" data-theme="b">
 				<li>
 					<h3>1H.com</h3>
 					<span class='booth'>#527</span>
+					<span class="platinum">PLATINUM SPONSOR</span>
 				</li>
-				<li data-icon="info">
+				<a name="A"></a>
+				<li>
 					<h3>Afilias Managed DNS Service</h3>
 					<span class='booth'>#119</span>
+					<span class="gold">GOLD SPONSOR</span>
 				</li>
 				<li>
 					<h3>Angelfish</h3>
 					<span class='booth'>#519</span>
+					<span class="silver">SILVER SPONSOR</span>
 				</li>
 				<li>
 					<h3>Appcore</h3>
 					<span class='booth'>#108</span>
+					<span class="media">MEDIA SPONSOR</span>
 				</li>
 				<li>
 					<h3>Arbor Networks</h3>
@@ -53,10 +87,7 @@
 					<h3>Aress Software (24x7 Hosting Support)</h3>
 					<span class='booth'>#915</span>
 				</li>
-				<li>
-					<h3>GOLD SPONSOR</h3>
-					<span class='booth'>#421</span>
-				</li>
+				<a name="B"></a>
 				<li>
 					<h3>BitTitan</h3>
 					<span class='booth'>#725</span>
@@ -69,6 +100,7 @@
 					<h3>Bobcares</h3>
 					<span class='booth'>#1011</span>
 				</li>
+				<a name="C"></a>
 				<li>
 					<h3>CakeMail</h3>
 					<span class='booth'>#228</span>
@@ -101,6 +133,7 @@
 					<h3>cPanel</h3>
 					<span class='booth'>#731</span>
 				</li>
+				<a name="D"></a>
 				<li>
 					<h3>Data Foundry</h3>
 					<span class='booth'>#116</span>
@@ -117,6 +150,7 @@
 					<h3>dotMobi</h3>
 					<span class='booth'>#121</span>
 				</li>
+				<a name="E"></a>
 				<li>
 					<h3>e-onlinedata</h3>
 					<span class='booth'>#711</span>
@@ -129,12 +163,15 @@
 					<h3>EvoSwitch</h3>
 					<span class='booth'>#1014</span>
 				</li>
+				<a name="F"></a>
 				<li>
 					<h3>FTP Today</h3>
 					<span class='booth'>#921</span>
 				</li>
+				<a name="G"></a>
 				<li>
-					<h3>GOLD SPONSOR</h3>
+					<h3>GlobalSign</h3>
+					<span class="gold">GOLD SPONSOR</span>
 					<span class='booth'>#501</span>
 				</li>
 				<li>
@@ -149,6 +186,7 @@
 					<h3>Great Lakes Computer</h3>
 					<span class='booth'>#704</span>
 				</li>
+				<a name="H"></a>
 				<li>
 					<h3>Hexagrid </h3>
 					<span class='booth'>#609</span>
@@ -157,10 +195,7 @@
 					<h3>Hostopia</h3>
 					<span class='booth'>#1000</span>
 				</li>
-				<li>
-					<h3>MEDIA PARTNER</h3>
-					<span class='booth'>#821</span>
-				</li>
+				<a name="I"></a>
 				<li>
 					<h3>iNET Interactive</h3>
 					<span class='booth'>#1000</span>
@@ -178,17 +213,10 @@
 					<span class='booth'>#622</span>
 				</li>
 				<li>
-					<h3>SILVER SPONSOR</h3>
-					<span class='booth'>#507</span>
-				</li>
-				<li>
 					<h3>ITWatchDogs</h3>
 					<span class='booth'>#720</span>
 				</li>
-				<li>
-					<h3>GOLD SPONSOR</h3>
-					<span class='booth'>#418</span>
-				</li>
+				<a name="L"></a>
 				<li>
 					<h3>LeaseWeb </h3>
 					<span class='booth'>#104</span>
@@ -225,14 +253,7 @@
 					<h3>Mobile Architect</h3>
 					<span class='booth'>#629</span>
 				</li>
-				<li>
-					<h3>SILVER SPONSOR</h3>
-					<span class='booth'>#1008</span>
-				</li>
-				<li>
-					<h3>PLATINUM SPONSOR</h3>
-					<span class='booth'>#203</span>
-				</li>
+				<a name="O"></a>
 				<li>
 					<h3>Open-Xchange,GmbH</h3>
 					<span class='booth'>#429</span>
@@ -242,16 +263,8 @@
 					<span class='booth'>#222</span>
 				</li>
 				<li>
-					<h3>PLATINUM SPONSOR</h3>
-					<span class='booth'>#303</span>
-				</li>
-				<li>
 					<h3>Pay Per Cloud</h3>
 					<span class='booth'>#312</span>
-				</li>
-				<li>
-					<h3>MEDIA PARTNER</h3>
-					<span class='booth'>#815</span>
 				</li>
 				<li>
 					<h3>Pinnacle Cart</h3>
@@ -264,10 +277,6 @@
 				<li>
 					<h3>ResellerClub</h3>
 					<span class='booth'>#313</span>
-				</li>
-				<li>
-					<h3>SILVER SPONSOR</h3>
-					<span class='booth'>#424</span>
 				</li>
 				<li>
 					<h3>ScienceLogic</h3>
@@ -286,14 +295,6 @@
 					<span class='booth'>#901</span>
 				</li>
 				<li>
-					<h3>PLATINUM SPONSOR</h3>
-					<span class='booth'>#413</span>
-				</li>
-				<li>
-					<h3>GOLD SPONSOR</h3>
-					<span class='booth'>#721</span>
-				</li>
-				<li>
 					<h3>Stallard Technologies</h3>
 					<span class='booth'>#321</span>
 				</li>
@@ -305,17 +306,10 @@
 					<h3>StopTheHacker.com</h3>
 					<span class='booth'>#102</span>
 				</li>
-				<li>
-					<h3>PLATINUM SPONSOR</h3>
-					<span class='booth'>#703</span>
-				</li>
+				<a name="T"></a>
 				<li>
 					<h3>TelecityGroup</h3>
 					<span class='booth'>#603</span>
-				</li>
-				<li>
-					<h3>SILVER SPONSOR</h3>
-					<span class='booth'>#715</span>
 				</li>
 				<li>
 					<h3>Topline Ventures</h3>
@@ -325,14 +319,7 @@
 					<h3>Tripod</h3>
 					<span class='booth'>#1102</span>
 				</li>
-				<li>
-					<h3>GOLD SPONSOR</h3>
-					<span class='booth'>#403</span>
-				</li>
-				<li>
-					<h3>GOLD SPONSOR</h3>
-					<span class='booth'>#1003</span>
-				</li>
+				<a name="V"></a>
 				<li>
 					<h3>VMware</h3>
 					<span class='booth'>#329</span>
@@ -341,10 +328,7 @@
 					<h3>vSplash</h3>
 					<span class='booth'>#914</span>
 				</li>
-				<li>
-					<h3>SILVER SPONSOR</h3>
-					<span class='booth'>#1015</span>
-				</li>
+				<a name="X"></a>
 				<li>
 					<h3>xByte Technologies</h3>
 					<span class='booth'>#623</span>
