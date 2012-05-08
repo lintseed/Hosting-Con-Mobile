@@ -435,6 +435,12 @@ div.Management							{ background: #E67C42; }
 				padding-left: 10px;
 			}
 
+	/* Maps
+	-----------------------------------------------------------------------------------------------------------*/
+	.map-type .ui-btn-inner {
+		padding: .2em 11px .25em;
+	}
+	
 	/* Navigation Slider
 	-----------------------------------------------------------------------------------------------------------*/
 	.slider { min-height: 250px; display: block; position: relative; background: #fff; overflow: hidden; padding-left: 25px; }
