@@ -83,10 +83,11 @@ body{
 		padding:15px 5px 0 5px;
 	}*/
 	#menu{
-		width:165px;
-		height:100%;
-		display:block!important;
-		float:left;
+		width: 165px;
+		height: 100%;
+		display: block;
+		float: left;
+		margin-left: -175px;
 		background: #222;
 		}
 		#menu ul{
@@ -435,6 +436,12 @@ div.Management							{ background: #E67C42; }
 				padding-left: 10px;
 			}
 
+	/* Maps
+	-----------------------------------------------------------------------------------------------------------*/
+	.map-type .ui-btn-inner {
+		padding: .2em 11px .25em;
+	}
+	
 	/* Navigation Slider
 	-----------------------------------------------------------------------------------------------------------*/
 	.slider { min-height: 250px; display: block; position: relative; background: #fff; overflow: hidden; padding-left: 25px; }
