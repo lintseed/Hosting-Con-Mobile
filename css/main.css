@@ -334,17 +334,15 @@ body{
 		}
 		#track {
 			width: 100%;
+			color: #fff;
 		}
 		ul#schedule-grid li {
+			overflow: hidden;
 			padding: .7em 15px .7em 15px;
 			border-bottom: 0;
 		}
 		ul#schedule-grid li.ui-btn {
 			margin: 0;
-			padding: 0 15px .7em;
-		}
-		ul#schedule-grid li .ui-btn {
-			padding: 0;
 		}
 		.schedule .time {
 			float: left;
@@ -356,6 +354,20 @@ body{
 			font-weight: 100;
 			color: #000;
 		/*	background: #454545; */
+		}
+		.schedule .sesh {
+			float: left;
+			}
+			.schedule h3 {
+				margin: 0 0 .3em;
+			}
+			.schedule .location {
+				font-size: 13px;
+				font-weight: normal;
+			}
+		ul#schedule-grid li .ui-btn {
+			clear: left;
+			padding: 0;
 		}
 		.ui-tabs { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
 		.ui-tabs .ui-tabs-nav { margin: 0; padding: .2em .2em 0; }
