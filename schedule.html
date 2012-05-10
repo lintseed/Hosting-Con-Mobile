@@ -13,6 +13,7 @@
 	<script src="js/jquery-1.7.1.min.js"></script>
 	<script src="js/jquery.mobile-1.1.0.min.js"></script>
 	<script type="text/javascript" src="js/app.js?v=30"></script>
+
 	<script type="text/javascript">
 
 	  var _gaq = _gaq || [];
@@ -42,37 +43,57 @@
 		</div><!-- /header -->
 		<div id="sponsor"></div>
 
+		
+
+		<div id="track" class="ui-bar ui-grid-c ui-footer ui-bar-a">Viewing Track: ALL</div>
+		
 		<div data-role="content" data-theme="a">
-			<div id="track" class="ui-bar ui-grid-c ui-footer ui-bar-a">Viewing Track: ALL</div>
-
+			
 			<!-- get current day and make default, otherwise make day monday -->
-			<ul id="days">
-				<li><a href="#main" data-role="button" data-theme="c" data-mini="true" data-inline="true">Monday</a></li>
-				<li><a href="#main" data-role="button" data-theme="c" data-mini="true" data-inline="true">Tuesday</a></li>
-				<li><a href="#main" data-role="button" data-theme="c" data-mini="true" data-inline="true">Wednesday</a></li>
+			<ul id="tab-nav">
+				<li><a href="#monday" data-tab="monday" data-role="button" data-theme="a"  class="ui-btn-active" data-mini="true" data-inline="true">Monday</a></li>
+				<li><a href="#tuesday" data-tab="tuesday" data-role="button" data-theme="c" data-mini="true" data-inline="true">Tuesday</a></li>
+				<li><a href="#wednesday" data-tab="wednesday" data-role="button" data-theme="c" data-mini="true" data-inline="true">Wednesday</a></li>
 			</ul>
 
-			<ul data-role="listview" id="schedule-grid" data-theme="b">
-				<li class="All">
-					<div id="time">7:30 - 5:00am</div>
-					<h3>Registration Open</h3>
-				</li>
-				<li class="All">
-					<div id="time">8:00 - 10:00am</div>
-					<h3>Breakfast</h3>
-				</li>
-				<li id="inline_205" class="Sales_and_Marketing">
-					<div id="time">9:00 - 9:45am</div>
-					<h3>Some Content Helps, Some Content Hurts</h3>
-					<span class='location'>Location</span>
-					<a href="#main" data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right">Give Feedback</a>
-				</li>
-				<li id="inline_227" class="Industry_Trends">
-					<h3>Industry_Trends</h3>
-					<span class='location'>Location</span>
-					<a href="#main" data-role="button" data-mini="true" data-inline="true" data-icon="arrow-r" data-iconpos="right">Give Feedback</a>
-				</li>
-			</ul>
+			<div id="tab-content">
+				<div id="monday" class="active tab"><!-- AARON TODO: give me an active class if today's the day -->
+					<ul data-role="listview" id="schedule-grid" data-theme="b">
+						<li class="All">
+							<div class="time">7:30 - 5:00am</div>
+							<h3>Registration Open</h3>
+						</li>
+						<li class="All">
+							<div class="time">8:00 - 10:00am</div>
+							<h3>Breakfast</h3>
+						</li>
+						<li id="inline_205" class="Sales_and_Marketing">
+							<div class="time">9:00 - 9:45am</div>
+							<h3>Some Content Helps, Some Content Hurts</h3>
+							<span class='location'>Location</span>
+							<a href="#main" data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right">Give Feedback</a>
+						</li>
+						<li id="inline_227" class="Industry_Trends">
+							<h3>Industry_Trends</h3>
+							<span class='location'>Location</span>
+							<a href="#main" data-role="button" data-mini="true" data-inline="true" data-icon="arrow-r" data-iconpos="right">Give Feedback</a>
+						</li>
+					</ul>
+				</div>
+
+				<div id="tuesday" class="tab">
+					<ul>
+						<li>tuesday<li>
+					</ul>
+				</div>
+
+				<div id="wednesday" class="tab">
+					<ul>
+						<li>wednesday</li>
+					</ul>
+				</div>
+
+			</div>
 
 		</div><!-- /content -->
 

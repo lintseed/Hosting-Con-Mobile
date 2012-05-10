@@ -316,26 +316,56 @@ body{
 	-----------------------------------------------------------------------------------------------------------*/
 	.schedule .ui-content {
 		padding: 15px 0;
-	}
-	ul#days {
-		list-style: none;
-		overflow: hidden;
-		padding: 0;
-	}
-		ul#days li {
-			float: left;
 		}
-	#track {
-		width: 100%;
-	}
-
-	div.time {
-		float: left;
-		font: ;
-	}
-	ul#schedule-grid li .ui-btn {
-		padding: 0;
-	}
+		ul#tab-nav {
+			list-style: none;
+			overflow: hidden;
+			padding: 0;
+		}
+			ul#tab-nav li {
+				float: left;
+			}
+		#tab-content .tab {
+			display: none;
+		}
+		#tab-content .active {
+			display: block;
+		}
+		#track {
+			width: 100%;
+		}
+		ul#schedule-grid li {
+			padding: .7em 15px .7em 15px;
+			border-bottom: 0;
+		}
+		ul#schedule-grid li.ui-btn {
+			margin: 0;
+			padding: 0 15px .7em;
+		}
+		ul#schedule-grid li .ui-btn {
+			padding: 0;
+		}
+		.schedule .time {
+			float: left;
+			width: 10%;
+			padding: 5px 0 5px 5px;
+			white-space: normal;
+			text-align: left;
+			font-size: 14px;
+			font-weight: 100;
+			color: #000;
+		/*	background: #454545; */
+		}
+		.ui-tabs { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+		.ui-tabs .ui-tabs-nav { margin: 0; padding: .2em .2em 0; }
+		.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 1px 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
+		.ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
+		.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; }
+		.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+		.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+		.ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 1em 1.4em; background: none; }
+		.ui-tabs .ui-tabs-hide { display: none !important; }
+/*
 	#schedule-grid.All,
 #schedule-grid.Networking {
 	padding: 3px 0 0 10px;
@@ -403,6 +433,8 @@ div.Sales_and_Marketing					{ background: #E6C142; }
 div.Industry_Trends						{ background: #847BE3; }
 div.Technology							{ background: #5DC289; }
 div.Management							{ background: #E67C42; }
+
+*/
 
 	/* Twitter Feed
 	-----------------------------------------------------------------------------------------------------------*/
