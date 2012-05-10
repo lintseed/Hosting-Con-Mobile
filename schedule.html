@@ -13,6 +13,7 @@
 	<script src="js/jquery-1.7.1.min.js"></script>
 	<script src="js/jquery.mobile-1.1.0.min.js"></script>
 	<script type="text/javascript" src="js/app.js?v=30"></script>
+	
 </head>
 <body>
 
@@ -32,34 +33,68 @@
 		<div data-role="content" data-theme="a">
 			<div id="track" class="ui-bar ui-grid-c ui-footer ui-bar-a">Viewing Track: ALL</div>
 
-			<!-- get current day and make default, otherwise make day monday -->
-			<ul id="days">
-				<li><a href="#main" data-role="button" data-theme="c" data-mini="true" data-inline="true">Monday</a></li>
-				<li><a href="#main" data-role="button" data-theme="c" data-mini="true" data-inline="true">Tuesday</a></li>
-				<li><a href="#main" data-role="button" data-theme="c" data-mini="true" data-inline="true">Wednesday</a></li>
-			</ul>
+			<div data-role="navbar">
+				<ul>
+					<li><a data-page="desc" href="#" class="ui-btn-active">Description</a></li>
+					<li><a data-page="reviews" href="#">Reviews</a></li>
+					<li><a data-page="qanda" href="#">Q&amp;A</a></li>
+					<li><a data-page="parts" href="#">Parts&amp;Services</a></li>
+				</ul>
+			</div>
 
-			<ul data-role="listview" id="schedule-grid" data-theme="b">
-				<li class="All">
-					<div id="time">7:30 - 5:00am</div>
-					<h3>Registration Open</h3>
-				</li>
-				<li class="All">
-					<div id="time">8:00 - 10:00am</div>
-					<h3>Breakfast</h3>
-				</li>
-				<li id="inline_205" class="Sales_and_Marketing">
-					<div id="time">9:00 - 9:45am</div>
-					<h3>Some Content Helps, Some Content Hurts</h3>
-					<span class='location'>Location</span>
-					<a href="#main" data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right">Give Feedback</a>
-				</li>
-				<li id="inline_227" class="Industry_Trends">
-					<h3>Industry_Trends</h3>
-					<span class='location'>Location</span>
-					<a href="#main" data-role="button" data-mini="true" data-inline="true" data-icon="arrow-r" data-iconpos="right">Give Feedback</a>
-				</li>
-			</ul>
+			<div class="panes">
+				<div data-page="desc">Howdy desc</div>
+				<div data-page="reviews">Reviews</div>
+				<div data-page="qanda">You gots questions?!</div>
+				<div data-page="parts">Parts n stuff</div>
+			</div>
+
+			<div id="tabs">
+				
+				<!-- get current day and make default, otherwise make day monday -->
+				<ul id="days">
+					<li><a href="#monday" data-role="button" data-theme="a" data-mini="true" data-inline="true">Monday</a></li>
+					<li><a href="#tuesday" data-role="button" data-theme="c" data-mini="true" data-inline="true">Tuesday</a></li>
+					<li><a href="#wednesday" data-role="button" data-theme="c" data-mini="true" data-inline="true">Wednesday</a></li>
+				</ul>
+
+				<div id="monday">
+					<ul data-role="listview" id="schedule-grid" data-theme="b">
+						<li class="All">
+							<div class="time">7:30 - 5:00am</div>
+							<h3>Registration Open</h3>
+						</li>
+						<li class="All">
+							<div class="time">8:00 - 10:00am</div>
+							<h3>Breakfast</h3>
+						</li>
+						<li id="inline_205" class="Sales_and_Marketing">
+							<div class="time">9:00 - 9:45am</div>
+							<h3>Some Content Helps, Some Content Hurts</h3>
+							<span class='location'>Location</span>
+							<a href="#main" data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right">Give Feedback</a>
+						</li>
+						<li id="inline_227" class="Industry_Trends">
+							<h3>Industry_Trends</h3>
+							<span class='location'>Location</span>
+							<a href="#main" data-role="button" data-mini="true" data-inline="true" data-icon="arrow-r" data-iconpos="right">Give Feedback</a>
+						</li>
+					</ul>
+				</div>
+
+				<div id="tuesday">
+					<ul>
+						<li>tuesday<li>
+					</ul>
+				</div>
+
+				<div id="wednesday">
+					<ul>
+						<li>wednesday</li>
+					</ul>
+				</div>
+
+			</div>
 
 		</div><!-- /content -->
 
