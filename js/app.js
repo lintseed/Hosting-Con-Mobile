@@ -4,7 +4,7 @@ $(document).bind("mobileinit", function(){
 
 $(document).delegate("#main", "pageinit", function() {
 	var menuStatus;
-	
+
 	// Show menu
 	$("a.showMenu").click(function(){
 		if (menuStatus != true){
@@ -21,11 +21,11 @@ $(document).delegate("#main", "pageinit", function() {
 			return false;
 		  }
 	});
-	
+
 });
-	
+
 $('#menu, .pages').live("swipeleft", function(){
-	if (menuStatus){	
+	if (menuStatus){
 	$(".ui-page-active").animate({
 		marginLeft: "0px",
 	  }, 300, function(){menuStatus = false});
@@ -57,7 +57,7 @@ $("#menu li a").click(function(){
 	}
 });
 
-// Tabs 
+// Tabs
 $('div[data-role="navbar"] a').live('click', function () {
 	$(this).addClass('ui-btn-active');
 	$('div.content_div').hide();
@@ -79,6 +79,30 @@ $('#schedule-grid li').click(function(){
 	window.location.hash = anchor;
 });
 
-//$(document).on(".alpha-list", "pageinit", function() {
-//	$('#slider').sliderNav({arrows: true});
+$(document).on(".alpha-list", "pageinit", function() {
+	$('#slider').sliderNav({arrows: true});
+});
+
+//$(document).on(".schedule", "pageinit", function() {
 //});
+/*
+function deluxeClick(){
+			$("#suites").hide();
+			$("#deluxe").show();
+		}
+
+		function suitesClick(){
+			$("#deluxe").hide();
+			$("#suites").show();
+		}
+*/
+$(function() {
+	$(document).delegate('#tab-nav a', 'click', function () {
+	    $('#tab-nav a').removeClass("ui-btn-active");
+	    $('#tab-content').removeClass("active");
+        $('#tab-content').children().hide('slow');
+	    $($(this).attr('href')).show('slow');
+          //  $("html,body").animate({scrollTop:0},500);
+            $(this).addClass("ui-btn-active");
+	});
+});
