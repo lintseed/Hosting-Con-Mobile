@@ -345,6 +345,25 @@ body{
 		#tab-content .active {
 			display: block;
 		}
+		#track-menu {
+			display: none;
+			position: absolute;
+			right: 0;
+			z-index: 9999;
+			float: right;
+			margin: 0;
+			padding: 0;
+
+			}
+			#track-menu li {
+				display: block;
+				text-align: right;
+				border: 0;
+			}
+			#track-menu li#Sales_and_Marketing { background: #E6C142; }
+			#track-menu li#Industry_Trends { background: #847BE3; }
+			#track-menu li#Technology { background: #5DC289; }
+			#track-menu li#Management { background: #E67C42; }
 		#track {
 			width: auto;
 			color: #fff;
@@ -354,13 +373,24 @@ body{
 			padding: .7em 15px .7em 15px;
 			border-bottom: 0;
 		}
+
 		#tab-content .tab ul li.ui-btn {
 			margin: 0;
 		}
+		#tab-content .tab ul li .ui-icon {
+				margin-top: -28px;
+			}
+			#tab-content .tab ul li.Sales_and_Marketing .ui-icon { background-color: #E6C142; }
+			#tab-content .tab ul li.Industry_Trends .ui-icon { background-color: #847BE3; }
+			#tab-content .tab ul li.Technology .ui-icon	{ background-color: #5DC289; }
+			#tab-content .tab ul li.Management .ui-icon	{ background-color: #E67C42; }
+		#tab-content .tab ul .ui-btn-inner {
+			border: 0;
+		}
 		.schedule .time {
 			float: left;
-			width: 10%;
-			padding: 5px 0 5px 5px;
+			width: 15%;
+			padding: 5px 0;
 			white-space: normal;
 			text-align: left;
 			font-size: 14px;
@@ -370,9 +400,24 @@ body{
 		}
 		.schedule .sesh {
 			float: left;
+			width: 85%;
+			padding: 0 0 10px;
+			white-space: normal;
+		}
+		.schedule .All .sesh {
+			width: auto;
+			padding: 0 0 0 10px;
 			}
-			.schedule h3 {
-				margin: 0 0 .3em;
+			.schedule .sesh a, .schedule .sesh .ui-link:visited {
+				display: block;
+				padding: 0 30px 0 10px;
+				color: #2F3E46;
+				text-decoration: none;
+			}
+			.schedule h3.ui-li-heading {
+				margin: 0 0 .1em;
+				font-size: 19px;
+				white-space: normal;
 			}
 			.schedule .location {
 				font-size: 13px;
@@ -383,6 +428,7 @@ body{
 			padding: 0;
 		}
 		
+
 		.ui-tabs { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
 		.ui-tabs .ui-tabs-nav { margin: 0; padding: .2em .2em 0; }
 		.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 1px 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; }

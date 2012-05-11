@@ -37,16 +37,23 @@
 		<div data-role="header">
 			<a href="#" class="showMenu menuBtn">Menu</a>
 			<h1><a href="/">HostingCon 2012</a></h1>
-			<a href="#">Track</a>
+			<a href="#" id="track-select" data-mini="true">Track</a>
+			<ul id="track-menu" data-role="listview" data-theme="a">
+				<li id="All">All</li>
+				<li id="Sales_and_Marketing">Sales & Marketing</li>
+				<li id="Industry_Trends">Industry Trends</li>
+				<li id="Technology">Technology</li>
+				<li id="Management">Management</li>
+			</ul>
 		</div><!-- /header -->
 		<div class="sponsor"><!--#include file="sponsor.html" --></div>
 
-		
 
-		<div id="track" class="ui-bar ui-grid-b ui-footer ui-bar-b" >Viewing Track: ALL</div>
-		
+
+		<div id="track" class="ui-bar ui-grid-b ui-footer ui-bar-b" >Viewing Track: <span>ALL</span></div>
+
 		<div data-role="content" data-theme="a">
-			
+
 			<!-- get current day and make default, otherwise make day monday -->
 			<ul id="tab-nav">
 				<li><a href="#monday" data-tab="monday" data-role="button" data-theme="c"  class="active" data-mini="true" data-inline="true">Monday</a></li>
@@ -55,7 +62,7 @@
 			</ul>
 
 			<div id="tab-content">
-				
+
 				<div id="monday" class="active tab"><!-- AARON TODO: give me an active class if today's the day -->
 					<ul data-role="listview" data-theme="b">
 						<li class="All">
@@ -70,53 +77,65 @@
 								<h3>Breakfast</h3>
 							</div>
 						</li>
-						<li id="inline_205" class="Sales_and_Marketing">
+						<li class="Sales_and_Marketing">
 							<div class="time">9:00 - 9:45am</div>
 							<div class="sesh">
-								<h3>Some Content Helps, Some Content Hurts</h3>
-								<span class='location'>Location</span>
+								<a href="#inline_205">
+									<h3>Some Content Helps, Some Content Hurts</h3>
+									<span class='location'>Location</span>
+								</a>
 							</div>
-							<a href="#main" data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right">Give Feedback</a>
+							<a href="#main" data-role="button" data-mini="true" data-icon="false">Give Feedback</a>
 						</li>
-						<li id="inline_227" class="Industry_Trends">
+						<li class="Industry_Trends">
 							<div class="time">9:00 - 9:45am</div>
 							<div class="sesh">
-								<h3>Hosting Industry Market Overview</h3>
-								<span class='location'>Location</span>
+								<a href="#inline_2227">
+									<h3>Hosting Industry Market Overview</h3>
+									<span class='location'>Location</span>
+								</a>
 							</div>
-							<a href="#main" data-role="button" data-mini="true" data-inline="true" data-icon="arrow-r" data-iconpos="right">Give Feedback</a>
+							<a href="#main" data-role="button" data-mini="true" data-icon="false">Give Feedback</a>
 						</li>
-						<li id="inline_210" class="Technology">
+						<li class="Technology">
 							<div class="time">9:00 - 9:45am</div>
 							<div class="sesh">
-								<h3>Integrating your products to take your company to the next level</h3>
-								<span class='location'>Location</span>
+								<a href="#inline_210">
+									<h3>Integrating your products to take your company to the next level</h3>
+									<span class='location'>Location</span>
+								</a>
 							</div>
-							<a href="#main" data-role="button" data-mini="true" data-inline="true" data-icon="arrow-r" data-iconpos="right">Give Feedback</a>
+							<a href="#main" data-role="button" data-mini="true" data-icon="false">Give Feedback</a>
 						</li>
-						<li id="inline_219" class="Management">
+						<li class="Management">
 							<div class="time">9:00 - 9:45am</div>
 							<div class="sesh">
-								<h3>Expert Tips to Use Inbound Marketing and Social Media for Lead Generation</h3>
-								<span class='location'>Location</span>
+								<a href="#inline_219">
+									<h3>Expert Tips to Use Inbound Marketing and Social Media for Lead Generation</h3>
+									<span class='location'>Location</span>
+								</a>
 							</div>
-							<a href="#main" data-role="button" data-mini="true" data-inline="true" data-icon="arrow-r" data-iconpos="right">Give Feedback</a>
+							<a href="#main" data-role="button" data-mini="true" data-icon="false">Give Feedback</a>
 						</li>
-						<li id="inline_204" class="Sales_and_Marketing">
+						<li class="Sales_and_Marketing">
 							<div class="time">10:00 - 10:45am</div>
 							<div class="sesh">
-								<h3>Partnerships Done Right</h3>
-								<span class='location'>Location</span>
+								<a href="#inline_204">
+									<h3>Partnerships Done Right</h3>
+									<span class='location'>Location</span>
+								</a>
 							</div>
-							<a href="#main" data-role="button" data-mini="true" data-inline="true" data-icon="arrow-r" data-iconpos="right">Give Feedback</a>
+							<a href="#main" data-role="button" data-mini="true" data-icon="false">Give Feedback</a>
 						</li>
-						<li id="inline_228" class="Sales_and_Marketing">
+						<li class="Sales_and_Marketing">
 							<div class="time">10:00 - 10:45am</div>
 							<div class="sesh">
-								<h3>One Cloud Isn’t Enough: Competing Against Amazon in a Commoditizing Cloud Market</h3>
-								<span class='location'>Location</span>
+								<a href="#inline_228">
+									<h3>One Cloud Isn’t Enough: Competing Against Amazon in a Commoditizing Cloud Market</h3>
+									<span class='location'>Location</span>
+								</a>
 							</div>
-							<a href="#main" data-role="button" data-mini="true" data-inline="true" data-icon="arrow-r" data-iconpos="right">Give Feedback</a>
+							<a href="#main" data-role="button" data-mini="true" data-icon="false">Give Feedback</a>
 						</li>
 					</ul>
 				</div>
