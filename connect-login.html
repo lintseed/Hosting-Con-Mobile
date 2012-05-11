@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Connect</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
+	<link rel="stylesheet" href="css/themes/HostingCon.css" />
+	<link rel="stylesheet" href="css/main.css?v=30" />
+	<link rel="apple-touch-icon" href="http://stage.m.hostingcon.com/apple-touch-icon-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" href="http://stage.m.hostingcon.com/apple-touch-icon-precomposed.png"/>
+    <link rel='apple-touch-startup-image' href="http://stage.m.hostingcon.com/apple-touch-icon-precomposed.png" />
+    <link href='http://stage.m.hostingcon.com/ic_fav_alpha_32.png' rel='icon' type='image/png' />
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/jquery.mobile-1.1.0.min.js"></script>
+	<script type="text/javascript" src="js/app.js?v=30"></script>
+	<script type="text/javascript" src="js/slidernav.js"></script>
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-256751-52']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</head>
+<body>
+
+	<div id="menu"><!--#include file="menu.html" --></div>
+
+
+	<div data-role="page" id="main" class="connect" data-theme="a">
+
+		<div data-role="header">
+			<a href="#" class="showMenu menuBtn">Menu</a>
+			<h1><a href="/">HostingCon 2012</a></h1>
+		</div><!-- /header -->
+		<div class="sponsor"><!--#include file="sponsor.html" --></div>
+
+		<div data-role="content" data-theme="a">
+			<h2>Login to use HostingCon Connect.</h2>
+
+			<div class="ui-body ui-body-c">
+				<form>
+					<div data-role="fieldcontain">
+					 <label for="name-c">Email:</label>
+					 <input type="text" name="name" id="name-c" value=""  />
+					</div>
+
+					<div data-role="fieldcontain">
+					 <label for="name-c">Password:</label>
+					 <input type="password" name="password" id="name-c" value=""  />
+					</div>
+
+					<button type="submit" data-theme="c" name="login" value="login">Login</button>
+					<a href="#" class="center forgot">Forgot password?</a>
+
+				</form>
+			</div>
+			
+		</div><!-- /content -->
+
+
+	</div><!-- /page -->
+
+
+</body>
+</html>

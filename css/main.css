@@ -68,13 +68,10 @@ body{
 	p {
 		margin: .75em 0;
 	}
-	.sponsor {
-		padding: 3px 0;
+	.center {
+		margin-left: auto;
+		margin-right: auto;
 		text-align: center;
-		font-size: 12px;
-		color: #333;
-		text-shadow: 0 /*{a-body-shadow-x}*/ 1px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ #F9D7AD /*{a-body-shadow-color}*/;
-		background: #EFB15F url(/images/sponsorbar.gif) 0 0 repeat-x;
 	}
 	/*
 	.contentWrap{
@@ -171,6 +168,14 @@ body{
 						a.menuBtn:hover{
 							border:none !important;
 						}
+	.sponsor {
+		padding: 3px 0;
+		text-align: center;
+		font-size: 12px;
+		color: #333;
+		text-shadow: 0 /*{a-body-shadow-x}*/ 1px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ #F9D7AD /*{a-body-shadow-color}*/;
+		background: #EFB15F url(/images/sponsorbar.gif) 0 0 repeat-x;
+	}
 	.ui-content {
 		border: 0;
 	}
@@ -478,6 +483,29 @@ body{
 		padding: .2em 11px .25em;
 	}
 	
+	/* Connect
+	-----------------------------------------------------------------------------------------------------------*/
+	/* Connect Login
+	----------------------------------------------*/
+	.connect .ui-br {
+		border-bottom-width: 0;
+	}
+	a.forgot {
+		display: block;
+		font-weight: normal;
+	}
+
+	/* Connect Forgot Password
+	----------------------------------------------*/
+	/* Connect Thread List
+	----------------------------------------------*/
+	/* Connect Message
+	----------------------------------------------*/
+	/* Connect Search
+	----------------------------------------------*/
+	
+
+
 	/* Navigation Slider
 	-----------------------------------------------------------------------------------------------------------*/
 	.slider { min-height: 250px; display: block; position: relative; background: #fff; overflow: hidden; padding-left: 25px; }
