@@ -178,6 +178,12 @@ body{
 		margin: 0;
 	}
 
+	/* Home Page
+	-----------------------------------------------------------------------------------------------------------*/
+	div.index .ui-content {
+		padding: 0;
+	}
+
 	/* Exhibitor List
 	-----------------------------------------------------------------------------------------------------------*/
 	.alpha-list .ui-content {
@@ -378,7 +384,7 @@ body{
 			width: auto;
 			color: #fff;
 		}
-		#tab-content .tab ul li {
+		.schedule-wrap ul li {
 			overflow: hidden;
 			padding: .7em 15px .7em 15px;
 			border-bottom: 0;
@@ -395,7 +401,7 @@ body{
 			#tab-content .tab ul li.Industry_Trends .ui-icon { background-color: #847BE3; }
 			#tab-content .tab ul li.Technology .ui-icon	{ background-color: #5DC289; }
 			#tab-content .tab ul li.Management .ui-icon	{ background-color: #E67C42; }
-		#tab-content .tab ul .ui-btn-inner {
+		.schedule-wrap ul .ui-btn-inner {
 			padding-right: 0; /* For no icon */
 			border: 0;
 		}
@@ -406,7 +412,6 @@ body{
 			font-size: 14px;
 			font-weight: 100;
 			color: #000;
-		/*	background: #454545; */
 		}
 		.schedule .sesh {
 			padding: 0 0 10px;
@@ -430,91 +435,11 @@ body{
 				font-size: 13px;
 				font-weight: normal;
 			}
-		#tab-content .tab ul li .ui-btn {
+		.schedule .schedule-wrap ul li .ui-btn {
 			clear: left;
 			padding: 0;
 		}
-		
 
-		.ui-tabs { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
-		.ui-tabs .ui-tabs-nav { margin: 0; padding: .2em .2em 0; }
-		.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 1px 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
-		.ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
-		.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; }
-		.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
-		.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
-		.ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 1em 1.4em; background: none; }
-		.ui-tabs .ui-tabs-hide { display: none !important; }
-/*
-	#schedule-grid.All,
-#schedule-grid.Networking {
-	padding: 3px 0 0 10px;
-	text-align: center;
-	vertical-align: middle;
-	background: #EFEFEA url(/account/themed/2012/img/texture.gif) 0 0 repeat;
-	font: italic normal 1.2em/1em CartoGothicStdBook, Myriad, Tahoma, Arial, sans-serif;
-	color: #454545;
-}
-
-#schedule-grid.altrow div.All, #schedule-grid.altrow div.Networking {
-}
-
-#schedule-grid li.session-20100721 table div.All, #schedule-grid li.session-20100721 table div.Networking {
-}
-
-#schedule-grid li.session-20100721 table tr.altrow div.All, #schedule-grid li.session-20100721 table tr.altrow div.Networking {
-}
-
-#schedule-grid.Keynote {
-	background: #FAF9E7;
-	border: 1px solid #EED8AA;
-	box-shadow: inset 0px 0px 16px #F2E4C1;
-	-moz-box-shadow: inset 0px 0px 16px #F2E4C1;
-	-webkit-box-shadow: inset 0px 0px 16px #F2E4C1;
-}
-
-#schedule-grid.Keynote span {
-	font-weight: bold;
-	display: block;
-}
-
-#schedule-grid.General_Session {
-	background: #F5F7FC;
-	border: 1px solid #CFD7F1;
-	box-shadow: inset 0px 0px 16px #DEE3F6;
-	-moz-box-shadow: inset 0px 0px 16px #DEE3F6;
-	-webkit-box-shadow: inset 0px 0px 16px #DEE3F6;
-}
-
-#schedule-grid.time,
-#schedule-grid table .time {
-	width: 6%;
-	padding: 5px 0 5px 5px;
-	text-align: left;
-	font: normal 0.9em/1.2em NewsCycleRegular, Arial, sans-serif;
-	color: #fff;
-	background: #454545;
-}
-#schedule-grid.altrow div.time		{ background: #787878; }
-
-
-.Sales_Marketing						{ color: #CDA20B; background: #CDA20B; }
-.Industry_Trends						{ color: #584DC7; background: #584DC7; }
-.Technology							{ color: #599271; background: #599271; }
-.Management							{ color: #CD4F0B; background: #CD4F0B; }
-
-tr.altrow div.Sales_and_Marketing		{ background: #E6CB6E; }
-tr.altrow div.Industry_Trends			{ background: #9D96E3; }
-tr.altrow div.Technology					{ background: #A0E1BC; }
-tr.altrow div.Management					{ background: #E6986E; }
-
-
-div.Sales_and_Marketing					{ background: #E6C142; }
-div.Industry_Trends						{ background: #847BE3; }
-div.Technology							{ background: #5DC289; }
-div.Management							{ background: #E67C42; }
-
-*/
 
 	/* Twitter Feed
 	-----------------------------------------------------------------------------------------------------------*/
