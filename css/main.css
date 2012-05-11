@@ -171,6 +171,9 @@ body{
 						a.menuBtn:hover{
 							border:none !important;
 						}
+	.ui-content {
+		border: 0;
+	}
 	.ui-content .ui-listview {
 		margin: 0;
 	}
@@ -345,6 +348,9 @@ body{
 		#tab-content .active {
 			display: block;
 		}
+		#track-select {
+			margin-top: 5px;
+		}
 		#track-menu {
 			display: none;
 			position: absolute;
@@ -357,13 +363,17 @@ body{
 			}
 			#track-menu li {
 				display: block;
+				padding-right: 30px;
 				text-align: right;
-				border: 0;
+				border-bottom: 0;
+				background-image: url(/images/schedule.png);
+				background-position: 146px 9px;
+				background-repeat: no-repeat;
 			}
-			#track-menu li#Sales_and_Marketing { background: #E6C142; }
-			#track-menu li#Industry_Trends { background: #847BE3; }
-			#track-menu li#Technology { background: #5DC289; }
-			#track-menu li#Management { background: #E67C42; }
+			#track-menu li#Sales_and_Marketing { background-position: 146px -35px; }
+			#track-menu li#Industry_Trends { background-position: 146px -79px; }
+			#track-menu li#Technology { background-position: 146px -122px; }
+			#track-menu li#Management { background-position: 146px -167px; }
 		#track {
 			width: auto;
 			color: #fff;

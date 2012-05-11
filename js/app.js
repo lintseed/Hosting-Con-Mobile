@@ -114,12 +114,12 @@ $(function() {
 });
 $(function() {
 	$(document).delegate('#track-menu li', 'click', function() {
-		if ($(this).attr('data-tab') == 'All') {
-			$('#tab-content ul li').show('slow');
+		if ($(this).attr('id') == 'All') {
+			$('#tab-content ul li').slideDown('slow');
 			$('#track span').html('All');
 		} else {
-			$('#tab-content ul li').hide('slow');
-			$('#tab-content ul li.'+$(this).attr('id')).show('slow');
+			$('#tab-content ul li').slideUp();
+			$('#tab-content ul li.'+$(this).attr('id')).slideDown();
 			
 			$('#track span').html($(this).html());
 		}
