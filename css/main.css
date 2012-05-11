@@ -326,6 +326,19 @@ body{
 			ul#tab-nav li {
 				float: left;
 			}
+			ul#tab-nav li .active {
+				border: 1px solid    		#ccc    /*{a-bup-border}*/;
+				background:    			#eee    /*{a-bup-background-color}*/;
+				font-weight: bold;
+				color:    					#2F3E46    /*{a-bup-color}*/;
+				text-shadow:    0    /*{a-bup-shadow-x}*/    1px    /*{a-bup-shadow-y}*/    1px    /*{a-bup-shadow-radius}*/    #f6f6f6    /*{a-bup-shadow-color}*/;
+				background-image: -webkit-gradient(linear, left top, left bottom, from(    #fdfdfd    /*{a-bup-background-start}*/), to(    #eee    /*{a-bup-background-end}*/)); /* Saf4+, Chrome */
+				background-image: -webkit-linear-gradient(    #fdfdfd    /*{a-bup-background-start}*/,    #eee    /*{a-bup-background-end}*/); /* Chrome 10+, Saf5.1+ */
+				background-image:    -moz-linear-gradient(    #fdfdfd    /*{a-bup-background-start}*/,    #eee    /*{a-bup-background-end}*/); /* FF3.6 */
+				background-image:     -ms-linear-gradient(    #fdfdfd    /*{a-bup-background-start}*/,    #eee    /*{a-bup-background-end}*/); /* IE10 */
+				background-image:      -o-linear-gradient(    #fdfdfd    /*{a-bup-background-start}*/,    #eee    /*{a-bup-background-end}*/); /* Opera 11.10+ */
+				background-image:         linear-gradient(    #fdfdfd    /*{a-bup-background-start}*/,    #eee    /*{a-bup-background-end}*/);
+		}
 		#tab-content .tab {
 			display: none;
 		}
@@ -333,15 +346,15 @@ body{
 			display: block;
 		}
 		#track {
-			width: 100%;
+			width: auto;
 			color: #fff;
 		}
-		ul#schedule-grid li {
+		#tab-content .tab ul li {
 			overflow: hidden;
 			padding: .7em 15px .7em 15px;
 			border-bottom: 0;
 		}
-		ul#schedule-grid li.ui-btn {
+		#tab-content .tab ul li.ui-btn {
 			margin: 0;
 		}
 		.schedule .time {
@@ -365,10 +378,11 @@ body{
 				font-size: 13px;
 				font-weight: normal;
 			}
-		ul#schedule-grid li .ui-btn {
+		#tab-content .tab ul li .ui-btn {
 			clear: left;
 			padding: 0;
 		}
+		
 		.ui-tabs { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
 		.ui-tabs .ui-tabs-nav { margin: 0; padding: .2em .2em 0; }
 		.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 1px 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; }

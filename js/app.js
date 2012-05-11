@@ -98,7 +98,8 @@ function deluxeClick(){
 */
 $(function() {
 	$(document).delegate('#tab-nav a', 'click', function () {
-	    $('#tab-nav a').removeClass("ui-btn-active");
+	    $('#tab-nav a').removeClass("active");
+		$(this).addClass("active");
 	    $('#tab-content').removeClass("active");
         $('#tab-content').children().hide('slow');
 	    $($(this).attr('href')).show('slow');
