@@ -97,13 +97,31 @@ function deluxeClick(){
 		}
 */
 $(function() {
-	$(document).delegate('#tab-nav a', 'click', function () {
+	$(document).delegate('#tab-nav a', 'click', function() {
 	    $('#tab-nav a').removeClass("active");
 		$(this).addClass("active");
 	    $('#tab-content').removeClass("active");
         $('#tab-content').children().hide('slow');
-	    $($(this).attr('href')).show('slow');
+	    $('#'+$(this).attr('data-tab')).show('slow');
           //  $("html,body").animate({scrollTop:0},500);
             $(this).addClass("ui-btn-active");
+	});
+});
+$(function() {
+	$(document).delegate('#track-select', 'click', function() {
+	    $('#track-menu').slideToggle('slow');
+	});
+});
+$(function() {
+	$(document).delegate('#track-menu li', 'click', function() {
+		if ($(this).attr('id') == 'All') {
+			$('#tab-content ul li').slideDown('slow');
+			$('#track span').html('All');
+		} else {
+			$('#tab-content ul li').slideUp();
+			$('#tab-content ul li.'+$(this).attr('id')).slideDown();
+			
+			$('#track span').html($(this).html());
+		}
 	});
 });
