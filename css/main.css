@@ -386,8 +386,9 @@ body{
 
 		#tab-content .tab ul li.ui-btn {
 			margin: 0;
-		}
-		#tab-content .tab ul li .ui-icon {
+			}
+			#tab-content .tab ul li .ui-icon {
+				right: 0;
 				margin-top: -28px;
 			}
 			#tab-content .tab ul li.Sales_and_Marketing .ui-icon { background-color: #E6C142; }
@@ -395,11 +396,10 @@ body{
 			#tab-content .tab ul li.Technology .ui-icon	{ background-color: #5DC289; }
 			#tab-content .tab ul li.Management .ui-icon	{ background-color: #E67C42; }
 		#tab-content .tab ul .ui-btn-inner {
+			padding-right: 0; /* For no icon */
 			border: 0;
 		}
 		.schedule .time {
-			float: left;
-			width: 15%;
 			padding: 5px 0;
 			white-space: normal;
 			text-align: left;
@@ -409,18 +409,15 @@ body{
 		/*	background: #454545; */
 		}
 		.schedule .sesh {
-			float: left;
-			width: 85%;
 			padding: 0 0 10px;
 			white-space: normal;
 		}
 		.schedule .All .sesh {
 			width: auto;
-			padding: 0 0 0 10px;
 			}
 			.schedule .sesh a, .schedule .sesh .ui-link:visited {
 				display: block;
-				padding: 0 30px 0 10px;
+				padding: 0 30px 0 0;
 				color: #2F3E46;
 				text-decoration: none;
 			}
