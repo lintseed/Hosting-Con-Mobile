@@ -36,28 +36,31 @@
 	<div data-role="page" id="main" class="connect" data-theme="a">
 
 		<div data-role="header">
-			<a href="#" class="showMenu menuBtn">Menu</a>
+			<a href="#main" data-direction="reverse" data-role="button" data-theme="c" data-icon="arrow-l" data-iconpos="notext" data-mini="true" data-inline="true"> </a>
 			<h1><a href="/">HostingCon 2012</a></h1>
 		</div><!-- /header -->
 		<div class="sponsor"><!--#include file="sponsor.html" --></div>
 
 		<div data-role="content" data-theme="a">
-			<h2>Login to use HostingCon Connect.</h2>
 
+			<div class="ui-bar ui-bar-e alert">
+				<p>We couldn't find that email address. Please check your spelling and try again.</p>
+			</div>
+
+			<div class="ui-bar ui-bar-e success">
+				<p>Your request has been submitted successfully. Your new password should be arriving shortly.</p>
+			</div>
+
+			<h2>Reset Account Password</h2>
+			<p>Please enter the email address associated with your account. A new password will be emailed to you.</p>
 			<div class="ui-body ui-body-c">
 				<form>
 					<div data-role="fieldcontain">
-					 <label for="name-c">Email</label>
+					 <label for="name-c">Email:</label>
 					 <input type="text" name="name" id="name-c" value=""  />
 					</div>
 
-					<div data-role="fieldcontain">
-					 <label for="name-c">Password</label>
-					 <input type="password" name="password" id="name-c" value=""  />
-					</div>
-
-					<button type="submit" data-theme="c" name="login" value="login">Login</button>
-					<a href="#" class="center forgot">Forgot password?</a>
+					<button type="submit" data-theme="c" name="submit" value="submit">Submit</button>
 
 				</form>
 			</div>

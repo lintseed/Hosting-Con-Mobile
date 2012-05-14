@@ -176,6 +176,36 @@ body{
 		text-shadow: 0 /*{a-body-shadow-x}*/ 1px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ #F9D7AD /*{a-body-shadow-color}*/;
 		background: #EFB15F url(/images/sponsorbar.gif) 0 0 repeat-x;
 	}
+
+	.alert, .success {
+			margin-bottom: 15px;
+		}
+		.ui-bar.alert p, .ui-bar.success p {
+			margin: 0;
+			padding: 15px 15px 15px 30px;
+			background: url('/images/exclamation.png') 0 13px no-repeat;
+		}
+		.ui-bar-e.success {
+			border-color: #79A56D;
+			background: #97C281;
+			background-image:-webkit-gradient(linear,left top,left bottom,from(#E6F4D4),to(#ABCE9A));
+			background-image:-webkit-linear-gradient(#E6F4D4,#ABCE9A);
+			background-image:-moz-linear-gradient(#E6F4D4,#ABCE9A);
+			background-image:-ms-linear-gradient(#E6F4D4,#ABCE9A);
+			background-image:-o-linear-gradient(#E6F4D4,#ABCE9A);
+			background-image:linear-gradient(#E6F4D4,#ABCE9A)
+			}
+			.ui-bar-e.success p {
+				background: url('/images/tick_circle.png') 0 13px no-repeat;
+			}
+		.alert p, .success p {
+			margin: -.3em 0 1em;
+			font-size: 85%;
+		}
+		.alert p, .success p {
+			margin: -.3em 0 1em;
+			font-size: 85%;
+		}
 	.ui-content {
 		border: 0;
 	}
