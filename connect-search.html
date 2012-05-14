@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<title>Connect (Logged In)</title>
+	<title>Connect Search</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
 	<link rel="stylesheet" href="css/themes/HostingCon.css" />
@@ -33,39 +33,63 @@
 	<div id="menu"><!--#include file="menu.html" --></div>
 
 
-	<div data-role="page" id="main" class="connect alpha-list" data-theme="a">
+	<div data-role="page" id="main" class="connect-search speaker-list alpha-list" data-theme="a">
 
 		<div data-role="header">
 			<a href="#" class="showMenu menuBtn">Menu</a>
 			<h1><a href="/">HostingCon 2012</a></h1>
-			<a href="connect-search.html" id="search" data-role="button" data-iconpos="notext" data-icon="search" data-mini="true"  data-theme="c">Search</a>
 		</div><!-- /header -->
 		<div class="sponsor"><!--#include file="sponsor.html" --></div>
 
-		<div id="message-count" class="ui-bar ui-grid-b ui-footer ui-bar-b" >x out of x messages remaining</div>
-
 		<div data-role="content" data-theme="a">
 
-			<ul id="messages" data-role="listview" data-theme="b">
-				<li><a href="#JimCiampaglio">
-					<img src="http://www.hostingcon.com/account/Uploader/uploader_images/show/316/resizeWidth:36" class="bioPhoto ui-li-thumb" alt="227323_1038873286769_1073630832_127291_6126_n.jpg" />
-					<span class="date">05-09-2012</span>
-					<span class="user">	Rob Farrell</span>
-					<span class="message">Test</span>
-				</a></li>
-				<li><a href="#RebeccaCorliss">
-					<img src="http://www.hostingcon.com/account/Uploader/uploader_images/show/316/resizeWidth:36" class="bioPhoto ui-li-thumb" alt="227323_1038873286769_1073630832_127291_6126_n.jpg" />
-					<span class="date">07-14-2011</span>
-					<span class="user">	Rob Farrell</span>
-					<span class="message">Hi John</span>
-				</a></li>
-				<li><a href="#SpeakerName">
-					<img src="http://www.hostingcon.com/account/Uploader/uploader_images/show/316/resizeWidth:36" class="bioPhoto ui-li-thumb" alt="227323_1038873286769_1073630832_127291_6126_n.jpg" />
-					<span class="date">07-13-2011</span>
-					<span class="user">Rob Farrell</span>
-					<span class="message">You're Totally Awesome</span>
-				</a></li>
-			</ul>
+			
+			<div id="slider">
+				<div class="slider-content">
+					<ul id="iphone-scroll">
+						<li id="c"><a name="c" class="title">C</a>
+
+							<ul id="connect-search" data-role="listview" data-filter="true" data-theme="b">
+								<li class="ui-screen-hidden"><a href="#RobRowe">
+									<img src="http://www.hostingcon.com/account/Uploader/uploader_images/show/991/resizeWidth:48" class="bioPhoto ui-li-thumb" alt="227323_1038873286769_1073630832_127291_6126_n.jpg" />
+									<h3>Rob Rowe</h3>
+									<span class="positch">Presales Engineer at Great Lakes Computer</span>
+								</a></li>
+								<li class="ui-screen-hidden"><a href="#MikeSadler">
+									<img src="http://www.hostingcon.com/account/Uploader/uploader_images/show/991/resizeWidth:48" class="bioPhoto ui-li-thumb" alt="227323_1038873286769_1073630832_127291_6126_n.jpg" />
+									<h3>Mike Sadler</h3>
+									<span class="positch">Director, Sales at Yottaa</span>
+								</a></li>
+								<li class="ui-screen-hidden"><a href="#MichaelFountain">
+									<img src="http://www.hostingcon.com/account/Uploader/uploader_images/show/991/resizeWidth:48" class="bioPhoto ui-li-thumb" alt="227323_1038873286769_1073630832_127291_6126_n.jpg" />
+									<h3>Michael Fountain</h3>
+									<span class="positch">Chief Strategy Officer at GlowTouch Technologies</span>
+								</a></li>
+								<li class="ui-screen-hidden"><a href="#ChrisDrake">
+									<img src="http://www.hostingcon.com/account/Uploader/uploader_images/show/991/resizeWidth:48" class="bioPhoto ui-li-thumb" alt="227323_1038873286769_1073630832_127291_6126_n.jpg" />
+									<h3>Chris Drake</h3>
+									<span class="positch">CEO/Founder at FireHost, Inc</span>
+								</a></li>
+								<li class="ui-screen-hidden"><a href="#ChrisVermeulen">
+									<img src="http://www.hostingcon.com/account/Uploader/uploader_images/show/991/resizeWidth:48" class="bioPhoto ui-li-thumb" alt="227323_1038873286769_1073630832_127291_6126_n.jpg" />
+									<h3>Chris Vermeulen</h3>
+									<span class="positch">Business Owner at AlphamegaHosting.com</span>
+								</a></li>
+								<li class="ui-screen-hidden"><a href="#BobBreckner">
+									<img src="http://www.hostingcon.com/account/Uploader/uploader_images/show/991/resizeWidth:48" class="bioPhoto ui-li-thumb" alt="227323_1038873286769_1073630832_127291_6126_n.jpg" />
+									<h3>Bob Breckner</h3>
+									<span class="positch">Vice President at Data Sales Co., Inc.</span>
+								</a></li>
+								<li class="ui-screen-hidden"><a href="#RobFarrell">
+									<img src="http://www.hostingcon.com/account/Uploader/uploader_images/show/991/resizeWidth:48" class="bioPhoto ui-li-thumb" alt="227323_1038873286769_1073630832_127291_6126_n.jpg" />
+									<h3>Rob Farrell</h3>
+									<span class="positch">Product Manager of Productizing at iNET Interactive</span>
+								</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
 
 		</div><!-- /content -->
 
@@ -86,7 +110,7 @@
 			<div class="headline">
 				<img src="http://www.hostingcon.com/account/Uploader/uploader_images/show/991/resizeWidth:64" class="bioPhoto" alt="227323_1038873286769_1073630832_127291_6126_n.jpg" />
 				<h2>Jim Ciampaglio</h2>
-				<span class="message">SVP of Global Sales and Marketing at FireHost, Inc</span>
+				<span class="positch">SVP of Global Sales and Marketing at FireHost, Inc</span>
 			</div>
 			<div class="bio">
 				<p>Jim Ciampaglio joined FireHost in late 2011 after holding many successful sales and executive roles in related high-tech and hosting companies. In his current role, Ciampaglio will further expand FireHost’s global distribution channels, including the implementation of a FireHost partner program, while overseeing business development activities for the company. Ciampaglio was previously the COO at NeoSpire Managed Hosting. There he was responsible for all operational departments and helped guide the company through its acquisition by Hosting.com. Prior to that role, he was vice president of sales at NaviSite, a Time Warner Cable Company that provided enterprise cloud hosting and managed services. With NaviSite he launched an SMB division and successfully implemented a global sales team focused on developing the company’s expansion into new markets. Ciampaglio was also the senior director of sales for NTT/Verio, a provider of hosted applications worldwide. Ciampaglio created the viaVerio reseller advisory board and partner portal. This program earned the company awards for its success by creating a marketplace and ecosystem that allowed its resellers to communicate and grow their businesses. Ciampaglio has also worked for Verizon, Aegis Communications and MBNA America.</p>

@@ -529,6 +529,35 @@ body{
 	----------------------------------------------*/
 	/* Connect Thread List
 	----------------------------------------------*/
+	#message-count {
+		width: auto;
+		color: #fff;
+	}
+	ul#messages li {
+		border-bottom: 0;
+	}
+	ul#messages .ui-li-has-thumb .ui-btn-inner a.ui-link-inherit,
+	ul#messages .ui-li-static.ui-li-has-thumb {
+		padding-left: 10px;
+		}
+		ul#messages .date {
+			float: right;
+			font-size: 12px;
+			line-height: 24px;
+			font-weight: normal;
+		}
+		ul#messages .user,
+		ul#messages .message {
+			display: block;
+			font-size: 13px;
+			line-height: 24px;
+			font-weight: normal;
+		}
+		ul#messages .message {
+			font-size: 15px;
+			font-weight: bold;
+		}
+
 	/* Connect Message
 	----------------------------------------------*/
 	/* Connect Search
