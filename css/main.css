@@ -342,15 +342,18 @@ body{
 
 	/* Speaker Details
 	-----------------------------------------------------------------------------------------------------------*/
-	.speaker .bioPhoto {
+	.speaker .bioPhoto,
+	.session .bioPhoto {
 		margin: 0 15px 0 0;
 	}
-	.speaker h2 {
+	.speaker h2,
+	.session h2 {
 		margin-bottom: .2em;
 		font-size: 24px;
 		font-weight: bold;
 	}
-	.speaker .bio {
+	.speaker .bio,
+	.session .description {
 		clear: left;
 		padding: 10px 0;
 		font-size: 13px;
@@ -361,6 +364,9 @@ body{
 	-----------------------------------------------------------------------------------------------------------*/
 	.schedule .ui-content {
 		padding: 15px 0;
+		}
+		.session .ui-content {
+			padding: 15px;
 		}
 		ul#tab-nav {
 			list-style: none;
@@ -540,26 +546,36 @@ body{
 	ul#messages .ui-li-static.ui-li-has-thumb {
 		padding-left: 10px;
 		}
-		ul#messages .date {
+		.connect .date {
 			float: right;
 			font-size: 12px;
 			line-height: 24px;
 			font-weight: normal;
 		}
-		ul#messages .user,
-		ul#messages .message {
+		.connect .user,
+		.connect .message {
 			display: block;
 			font-size: 13px;
 			line-height: 24px;
 			font-weight: normal;
 		}
-		ul#messages .message {
+		.connect .message {
 			font-size: 15px;
 			font-weight: bold;
 		}
 
 	/* Connect Message
 	----------------------------------------------*/
+	.connect #message .message {
+		font-size: 14px;
+		font-weight: normal;
+		white-space: normal;
+	}
+	.connect #message .date,
+	.connect #message .user {
+		font-weight: bold;
+	}
+
 	/* Connect Search
 	----------------------------------------------*/
 	.connect-search .ui-field-contain,
