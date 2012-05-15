@@ -6,20 +6,6 @@ $(document).bind("mobileinit", function(){
 
 $(document).delegate("#main", "pageinit", function() {
 	var menuStatus;
-
-	// Not working so hot in this version of jQM
-	$('input[data-type="search"]').keyup(function() {
-		if ($(this).val() == '') {
-			$("ul:jqmData(role='listview')").children('li').addClass('ui-screen-hidden');
-		}
-	});
-/*
-	$('a.ui-input-clear').click(function() {
-		$("input[data-type='search']").val('');
-		$("input[data-type='search']").trigger('keyup');
-	});
-*/
-
 	
 	// Show menu
 	$("a.showMenu").click(function(){
