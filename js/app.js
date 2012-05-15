@@ -81,7 +81,7 @@ $('#schedule-grid li').click(function(){
 	window.location.hash = anchor;
 });
 
-$(document).on(".alpha-list", "pageinit", function() {
+$(document).delegate(".alpha-list", "pageinit", function() {
 	$('#slider').sliderNav({arrows: true});
 });
 

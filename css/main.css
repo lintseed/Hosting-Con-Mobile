@@ -567,7 +567,7 @@ body{
 		margin: 0;
 		padding: 0 10px;
 	}
-	#connect-search .ui-icon-arrow-r {
+	.connect-search .ui-icon-arrow-r {
 		background: url("http://www.hostingcon.com/wp-content/themes/2012/images/sprite-icons.png") 2px -511px no-repeat;
 	}
 
