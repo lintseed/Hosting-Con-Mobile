@@ -551,6 +551,7 @@ body{
 			font-size: 12px;
 			line-height: 24px;
 			font-weight: normal;
+			color: #666;
 		}
 		.connect .user,
 		.connect .message {
@@ -558,22 +559,34 @@ body{
 			font-size: 13px;
 			line-height: 24px;
 			font-weight: normal;
+			color: #666;
 		}
 		.connect .message {
 			font-size: 15px;
 			font-weight: bold;
+			color: #000;
 		}
 
 	/* Connect Message
 	----------------------------------------------*/
-	.connect #message .message {
+	.connect .message p.message {
+		margin: .25em 0;
 		font-size: 14px;
 		font-weight: normal;
+		line-height: 18px;
 		white-space: normal;
 	}
-	.connect #message .date,
-	.connect #message .user {
+	.connect div.message .date,
+	.connect div.message .user {
 		font-weight: bold;
+		color: #666;
+	}
+	.connect hr {
+		margin: 20px 0;
+		padding: 0;
+		border: 1px solid #999;
+		border-width: 1px 0 0;
+		background: none;
 	}
 
 	/* Connect Search
