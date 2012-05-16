@@ -268,7 +268,7 @@ body{
 	/* Exhibitor Details
 	-----------------------------------------------------------------------------------------------------------*/
 	.exhibitor .ui-content {
-		margin: 20px 10px;
+		margin: 0;
 	}
 	.exhibitor .ui-body-b,
 	.exhibitor .ui-dialog.ui-overlay-b {
