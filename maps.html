@@ -1,8 +1,8 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
+<!DOCTYPE html>
+<html>
+<head>
 	<title>Maps</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
 	<link rel="stylesheet" href="css/themes/HostingCon.css" />
 	<link rel="stylesheet" href="css/main.css?v=30" />
@@ -36,27 +36,41 @@
 	  })();
 
 	</script>
-</head> 
+</head>
 <body>
-	
+
 	<div id="menu"><!--#include file="menu.html" --></div>
-	
-	<div data-role="page" id="gps_map" data-theme="a">
-		
+
+	<div data-role="page" id="main" class="gps_map" data-theme="a">
+
 		<div data-role="header">
 			<a href="#" class="showMenu menuBtn">Menu</a>
 			<h1><a href="/">HostingCon 2012</a></h1>
-			<a href="#" class="map-type">Map<br />Type</a>
+			<a href="#" id="map-select" data-mini="true">Map<br />Type</a>
+			<ul id="tab-nav" class="map-type" data-role="listview" data-theme="a">
+				<li data-icon="false"><a href="#map" data-tab="map">Your Location</a></li>
+				<li data-icon="false"><a href="#pdf" data-tab="pdf">Venue</a></li>
+			</ul>
 		</div><!-- /header -->
 		<div class="sponsor"><!--#include file="sponsor.html" --></div>
 
-	
 		<div data-role="content" data-theme="a">
-			<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:1em;">
-				<div id="map_canvas_2" style="height:300px;"></div>
+
+			<div id="tab-content">
+
+				<div id="map" class="ui-bar-c ui-corner-all ui-shadow" style="padding:1em;">
+					<div id="map_canvas_2" style="height:300px;"></div>
+				</div>
+
+				<div id="pdf">
+					<object width="100%" height="100%" data="HYNES-Floor-Plans-4-29-11.pdf" type="application/pdf"></object>
+				</div>
+
 			</div>
+
+
 		</div><!-- /content -->
-	
+
 	</div><!-- /page -->
 
 

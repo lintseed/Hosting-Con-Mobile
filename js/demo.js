@@ -90,7 +90,7 @@
 
 			////////////////////////////////////////////////////////////
 
-			$('#gps_map').live('pageinit', function() {
+			$('.gps_map').live('pageinit', function() {
 				demo.add('gps_map', function() {
 					$('#map_canvas_2').gmap({'center': mobileDemo.center, 'zoom': mobileDemo.zoom, 'disableDefaultUI':true, 'callback': function(map) {
 						var self = this;
@@ -109,11 +109,11 @@
 				}).load('gps_map');
 			});
 
-			$('#gps_map').live('pageshow', function() {
+			$('.gps_map').live('pageshow', function() {
 				demo.add('gps_map', function() { $('#map_canvas_2').gmap('refresh'); }).load('gps_map');
 			});
 
-			$('#gps_map').live("pagehide", function() {
+			$('.gps_map').live("pagehide", function() {
 				demo.add('gps_map', function() { $('#map_canvas_2').gmap('clearWatch'); }).load('gps_map');
 			});
 

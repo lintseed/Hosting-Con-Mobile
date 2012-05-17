@@ -398,7 +398,8 @@ body{
 		#track-select {
 			margin-top: 5px;
 		}
-		#track-menu {
+		#track-menu,
+		ul.map-type {
 			display: none;
 			position: absolute;
 			right: 0;
@@ -408,7 +409,8 @@ body{
 			padding: 0;
 
 			}
-			#track-menu li {
+			#track-menu li,
+			ul.map-type li {
 				display: block;
 				padding-right: 30px;
 				text-align: right;
@@ -515,9 +517,31 @@ body{
 
 	/* Maps
 	-----------------------------------------------------------------------------------------------------------*/
-	.map-type .ui-btn-inner {
-		padding: .2em 11px .25em;
-	}
+	.gps_map .ui-content {
+		padding: 0;
+		}
+		#map-select .ui-btn-inner {
+				padding: .2em 11px .25em;
+			}
+			.gps_map ul#tab-nav {
+				border-bottom: 1px solid #CCC;
+				}
+				.gps_map ul#tab-nav li {
+					float: none;
+					display: block;
+					padding: 0;
+					background-image: none;
+				}
+				.gps_map ul#tab-nav li a {
+					width: 100%;
+					border: 0;
+				}
+		#map {
+			margin: 15px;
+		}
+		#pdf {
+			display: none;
+		}
 	
 	/* Connect
 	-----------------------------------------------------------------------------------------------------------*/
