@@ -1,6 +1,5 @@
 $(document).bind("mobileinit", function(){
 	$.mobile.pushStateEnabled = true;
-	
 });
 
 
@@ -132,4 +131,7 @@ $(function() {
 	$(document).delegate('#map-select', 'click', function() {
 	    $('.map-type').slideToggle('slow');
 	});
+});
+$(document).delegate(".gps_map", "pageinit", function() {
+	$.mobile.hidePageLoadingMsg();
 });
